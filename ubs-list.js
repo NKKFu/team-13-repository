@@ -3,7 +3,7 @@ const JSONlist =
     "listOfUbs": [
         {
             "name": "Ubs",
-            "street": "R. Fragata, 1-135 - PetrÛpolis, Manaus - AM, 69067-110",
+            "street": "R. Fragata, 1-135 - Petr√≥polis, Manaus - AM, 69067-110",
             "long": -59.9953857,
             "lati": -3.1073604,
             "": ""
@@ -23,8 +23,8 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "UBS - Unidade B·sica de Sa˙de - Ida Pontes Mentoni",
-            "street": "R. Ajuricaba, s/n - S„o Jorge, Manaus - AM, 69033-090",
+            "name": "UBS - Unidade B√°sica de Sa√∫de - Ida Pontes Mentoni",
+            "street": "R. Ajuricaba, s/n - S√£o Jorge, Manaus - AM, 69033-090",
             "long": -60.0423917,
             "lati": -3.1087804,
             "": ""
@@ -38,7 +38,7 @@ const JSONlist =
         },
         {
             "name": "Ubs Alfredo Campos",
-            "street": "Av. AndrÈ Ara˙jo - S„o Francisco, Manaus - AM, 69060-000",
+            "street": "Av. Andr√© Ara√∫jo - S√£o Francisco, Manaus - AM, 69060-000",
             "long": -60.0061571,
             "lati": -3.1053559,
             "": ""
@@ -52,14 +52,14 @@ const JSONlist =
         },
         {
             "name": "UBS Armando Mendes",
-            "street": "Conjunto, R. AragarÁas - Manoa, Manaus - AM",
+            "street": "Conjunto, R. Aragar√ßas - Manoa, Manaus - AM",
             "long": -60.00080980000001,
             "lati": -3.0236117,
             "": ""
         },
         {
             "name": "UBS Augias Gadelha",
-            "street": "Conj. Ribeiro J˙nior Rua A s/n - Cidade Nova, Manaus - AM, 69090-667",
+            "street": "Conj. Ribeiro J√∫nior Rua A s/n - Cidade Nova, Manaus - AM, 69090-667",
             "long": -59.98242790000001,
             "lati": -3.0262507,
             "": ""
@@ -73,7 +73,7 @@ const JSONlist =
         },
         {
             "name": "Ubs Balbina Mestrinho",
-            "street": "Rua Maj. Silverio J. Nery Rua 17 N˙cleo Iii - Cidade Nova, Manaus - AM, 69094-170",
+            "street": "Rua Maj. Silverio J. Nery Rua 17 N√∫cleo Iii - Cidade Nova, Manaus - AM, 69094-170",
             "long": -59.980622,
             "lati": -3.041717,
             "": ""
@@ -94,7 +94,7 @@ const JSONlist =
         },
         {
             "name": "Ubs Cacilda De Freitas",
-            "street": "362, R. PenetraÁ„o II, 302 - S„o JosÈ Oper·rio, Manaus - AM, 69086-011",
+            "street": "362, R. Penetra√ß√£o II, 302 - S√£o Jos√© Oper√°rio, Manaus - AM, 69086-011",
             "long": -59.9529022,
             "lati": -3.0608775,
             "": ""
@@ -107,8 +107,8 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "UBS Deodato de Miranda Le„o",
-            "street": "Av. Pres. Dutra, S/N - GlÛria, Manaus - AM, 69027-110",
+            "name": "UBS Deodato de Miranda Le√£o",
+            "street": "Av. Pres. Dutra, S/N - Gl√≥ria, Manaus - AM, 69027-110",
             "long": -60.0365894,
             "lati": -3.1200248,
             "": ""
@@ -121,29 +121,29 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "UBS Dom Milton CorrÍa Pereira",
+            "name": "UBS Dom Milton Corr√™a Pereira",
             "street": "110, Rua Tiradente, 28 - Santo Agostinho, Manaus - AM, 69036-780",
             "long": -60.0628034,
             "lati": -3.0911539,
             "": ""
         },
         {
-            "name": "UBS Dr. JosÈ Amazonas Palhano",
-            "street": "R. AntÙnio Matias, sn - S„o JosÈ Ii, Manaus - AM, 69085-010",
+            "name": "UBS Dr. Jos√© Amazonas Palhano",
+            "street": "R. Ant√¥nio Matias, sn - S√£o Jos√© Ii, Manaus - AM, 69085-010",
             "long": -59.9525886,
             "lati": -3.0692442,
             "": ""
         },
         {
             "name": "Ubs Dr. Luiz Montenegro (S-09)",
-            "street": "Av. Rio JutaÌ, 37 - Nossa Sra. das GraÁas, Manaus - AM, 69053-020",
+            "street": "Av. Rio Juta√≠, 37 - Nossa Sra. das Gra√ßas, Manaus - AM, 69053-020",
             "long": -60.02162589999999,
             "lati": -3.1045463,
             "": ""
         },
         {
             "name": "UBS Dr. Silas Oliveira Dantas",
-            "street": "R. Dezesseis, 30 - S„o JosÈ Oper·rio, Manaus - AM, 69086-531",
+            "street": "R. Dezesseis, 30 - S√£o Jos√© Oper√°rio, Manaus - AM, 69086-531",
             "long": -59.93168679999999,
             "lati": -3.0751589,
             "": ""
@@ -157,7 +157,7 @@ const JSONlist =
         },
         {
             "name": "UBS Dra. Lindalva Damasceno",
-            "street": "R. Sete - Tarum„, Manaus - AM",
+            "street": "R. Sete - Tarum√£, Manaus - AM",
             "long": -60.0514693,
             "lati": -2.9853895,
             "": ""
@@ -170,28 +170,28 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "Ubs F·tima Andrade N-07 N-10 N-65",
-            "street": "Rua 52 Conj. Amazonino Mendes Mutir„o - Novo Aleixo, Manaus - AM, 69099-270",
+            "name": "Ubs F√°tima Andrade N-07 N-10 N-65",
+            "street": "Rua 52 Conj. Amazonino Mendes Mutir√£o - Novo Aleixo, Manaus - AM, 69099-270",
             "long": -59.9547315,
             "lati": -3.0401766,
             "": ""
         },
         {
-            "name": "UBS Frank CalderÛn Rosenberg",
-            "street": "R. Nova EsperanÁa, 91 - Crespo, Manaus - AM, 69073-181",
+            "name": "UBS Frank Calder√≥n Rosenberg",
+            "street": "R. Nova Esperan√ßa, 91 - Crespo, Manaus - AM, 69073-181",
             "long": -59.9917749,
             "lati": -3.1283289,
             "": ""
         },
         {
-            "name": "Ubs Frei ValÈrio (N-32)",
+            "name": "Ubs Frei Val√©rio (N-32)",
             "street": "R. Bom Jesus, Sn - Novo Israel, Manaus - AM, 69039-690",
             "long": -60.01369849999999,
             "lati": -3.0253641,
             "": ""
         },
         {
-            "name": "UBS Frei ValÈrio Di Carlo",
+            "name": "UBS Frei Val√©rio Di Carlo",
             "street": "R. Rufino de Elizalde, 16-50 - Novo Israel, Manaus - AM, 69039-540",
             "long": -60.013559,
             "lati": -3.0254194,
@@ -206,7 +206,7 @@ const JSONlist =
         },
         {
             "name": "UBS Guilherme Alexandre",
-            "street": "R. Nova Rep˙blica, 575 - ColÙnia AntÙnio Aleixo, Manaus - AM, 69008-030",
+            "street": "R. Nova Rep√∫blica, 575 - Col√¥nia Ant√¥nio Aleixo, Manaus - AM, 69008-030",
             "long": -59.89551779999999,
             "lati": -3.084572300000001,
             "": ""
@@ -219,14 +219,14 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "UBS Jo„o Nogueira da Matta",
+            "name": "UBS Jo√£o Nogueira da Matta",
             "street": "R. Dr. Daniel, 77 - Zumbi dos Palmares, Manaus - AM, 69084-150",
             "long": -59.94559689999999,
             "lati": -3.0814342,
             "": ""
         },
         {
-            "name": "UBS JosÈ Figliuolo",
+            "name": "UBS Jos√© Figliuolo",
             "street": "R. Rio Maicuru - Lago Azul, Manaus - AM",
             "long": -59.9950869,
             "lati": -2.9679084,
@@ -241,7 +241,7 @@ const JSONlist =
         },
         {
             "name": "UBS L-01",
-            "street": "Loteamento Val ParaÌso - Av, R. Alarico Furtado - Cidade de Deus, Manaus - AM, 69088-301",
+            "street": "Loteamento Val Para√≠so - Av, R. Alarico Furtado - Cidade de Deus, Manaus - AM, 69088-301",
             "long": -59.9280031,
             "lati": -3.0178998,
             "": ""
@@ -269,7 +269,7 @@ const JSONlist =
         },
         {
             "name": "UBS L-13",
-            "street": "R. Q - Loteamento Santa InÈs - Jorge Teixeira, Manaus - AM, 69088-405",
+            "street": "R. Q - Loteamento Santa In√©s - Jorge Teixeira, Manaus - AM, 69088-405",
             "long": -59.920889,
             "lati": -3.051142999999999,
             "": ""
@@ -283,28 +283,28 @@ const JSONlist =
         },
         {
             "name": "UBS L-18",
-            "street": "R. da IndependÍncia - Parque Mau· - Mauazinho, Manaus - AM, 69075-200",
+            "street": "R. da Independ√™ncia - Parque Mau√° - Mauazinho, Manaus - AM, 69075-200",
             "long": -59.949429,
             "lati": -3.115156,
             "": ""
         },
         {
             "name": "UBS L-19",
-            "street": "Beco Buriti - prÛximo a R. Manoel Matias - ColÙnia AntÙnio Aleixo, Manaus - AM, 69008-003",
+            "street": "Beco Buriti - pr√≥ximo a R. Manoel Matias - Col√¥nia Ant√¥nio Aleixo, Manaus - AM, 69008-003",
             "long": -59.895671,
             "lati": -3.088317999999999,
             "": ""
         },
         {
             "name": "UBS L-21",
-            "street": "Rua S„o Paulo - Cidade Alta - Jorge Teixeira, Manaus - AM, 69088-067",
+            "street": "Rua S√£o Paulo - Cidade Alta - Jorge Teixeira, Manaus - AM, 69088-067",
             "long": -59.9216421,
             "lati": -3.0229841,
             "": ""
         },
         {
             "name": "UBS L-23",
-            "street": "R. Rio Anacora, 6 - S„o JosÈ Oper·rio, Manaus - AM, 69085-170",
+            "street": "R. Rio Anacora, 6 - S√£o Jos√© Oper√°rio, Manaus - AM, 69085-170",
             "long": -59.957918,
             "lati": -3.072749,
             "": ""
@@ -318,21 +318,21 @@ const JSONlist =
         },
         {
             "name": "UBS L-26",
-            "street": "R. das AngÈlicas, 135 - Jorge Teixeira, Manaus - AM, 69088-030",
+            "street": "R. das Ang√©licas, 135 - Jorge Teixeira, Manaus - AM, 69088-030",
             "long": -59.93385499999999,
             "lati": -3.04756,
             "": ""
         },
         {
             "name": "UBS L-27",
-            "street": "R. S„o Francisco, 127 - Coroado, Manaus - AM, 69080-291",
+            "street": "R. S√£o Francisco, 127 - Coroado, Manaus - AM, 69080-291",
             "long": -59.9769609,
             "lati": -3.085771899999999,
             "": ""
         },
         {
             "name": "UBS L-29",
-            "street": "R. Fl·vio Costa, 579 - Coroado, Manaus - AM, 69080-710",
+            "street": "R. Fl√°vio Costa, 579 - Coroado, Manaus - AM, 69080-710",
             "long": -59.986406,
             "lati": -3.090632,
             "": ""
@@ -353,7 +353,7 @@ const JSONlist =
         },
         {
             "name": "UBS L-36",
-            "street": "R. VitÛria RÈgia, 93 - Grande VitÛria - Gilberto Mestrinho, Manaus - AM, 69086-647",
+            "street": "R. Vit√≥ria R√©gia, 93 - Grande Vit√≥ria - Gilberto Mestrinho, Manaus - AM, 69086-647",
             "long": -59.925555,
             "lati": -3.064127999999999,
             "": ""
@@ -367,27 +367,27 @@ const JSONlist =
         },
         {
             "name": "UBS L-44",
-            "street": "Rua 04, S/N, Jardim Mau· - Mauazinho, Manaus - AM, 69075-305",
+            "street": "Rua 04, S/N, Jardim Mau√° - Mauazinho, Manaus - AM, 69075-305",
             "long": -59.9405702,
             "lati": -3.1166953,
             "": ""
         },
         {
             "name": "UBS L-45",
-            "street": "Rua PenetraÁ„o I, S/N - S„o JosÈ Oper·rio, Manaus - AM, 69086-010",
+            "street": "Rua Penetra√ß√£o I, S/N - S√£o Jos√© Oper√°rio, Manaus - AM, 69086-010",
             "long": -59.95270600000001,
             "lati": -3.0613824,
             "": ""
         },
         {
             "name": "UBS L-47",
-            "street": "Rua Beija Flor - prÛximo ‡ Reserva Adolpho Duckrer - Jorge Teixeira, Manaus - AM, 69057-520",
+            "street": "Rua Beija Flor - pr√≥ximo √† Reserva Adolpho Duckrer - Jorge Teixeira, Manaus - AM, 69057-520",
             "long": -59.939405,
             "lati": -3.0083765,
             "": ""
         },
         {
-            "name": "UBS LourenÁo Borghi",
+            "name": "UBS Louren√ßo Borghi",
             "street": "Tv. S 6, s/n - Japiim, Manaus - AM, 69078-420",
             "long": -59.9877947,
             "lati": -3.1155879,
@@ -401,7 +401,7 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "UBS MJ PM S·lvio Belota",
+            "name": "UBS MJ PM S√°lvio Belota",
             "street": "R. Samambaia, 786 - Santa Etelvina, Manaus - AM, 69990-000",
             "long": -60.01262299999999,
             "lati": -2.9842421,
@@ -430,7 +430,7 @@ const JSONlist =
         },
         {
             "name": "UBS N-02",
-            "street": "R. dos CuriÛs, S/N - Cidade de Deus, Manaus - AM, 69099-394",
+            "street": "R. dos Curi√≥s, S/N - Cidade de Deus, Manaus - AM, 69099-394",
             "long": -59.956058,
             "lati": -3.020033999999999,
             "": ""
@@ -451,28 +451,28 @@ const JSONlist =
         },
         {
             "name": "UBS N-07",
-            "street": "R. JerusalÈm, S/N, Nossa Senhora de F·tima - Novo Aleixo, Manaus - AM, 69099-354",
+            "street": "R. Jerusal√©m, S/N, Nossa Senhora de F√°tima - Novo Aleixo, Manaus - AM, 69099-354",
             "long": -59.95114499999999,
             "lati": -3.037254,
             "": ""
         },
         {
             "name": "UBS N-08",
-            "street": "Novo Cana„ - R. Gaivota - Novo Aleixo, Manaus - AM, 69099-571",
+            "street": "Novo Cana√£ - R. Gaivota - Novo Aleixo, Manaus - AM, 69099-571",
             "long": -59.946269,
             "lati": -3.046804,
             "": ""
         },
         {
             "name": "UBS N-09",
-            "street": "R. Rio CapiapÙ - Novo Aleixo, Manaus - AM, 69098-298",
+            "street": "R. Rio Capiap√¥ - Novo Aleixo, Manaus - AM, 69098-298",
             "long": -59.960065,
             "lati": -3.057976999999999,
             "": ""
         },
         {
             "name": "UBS N-11",
-            "street": "R. Quinze, S/N, Nossa Senhora DE F·tima I - Novo Aleixo, Manaus - AM, 69099-070",
+            "street": "R. Quinze, S/N, Nossa Senhora DE F√°tima I - Novo Aleixo, Manaus - AM, 69099-070",
             "long": -59.94787100000001,
             "lati": -3.0429308,
             "": ""
@@ -486,21 +486,21 @@ const JSONlist =
         },
         {
             "name": "Ubs N-12",
-            "street": "R. Antonio SÈrgio Vieiralves sn Carabinane - Novo Aleixo, Manaus - AM, 69098-165",
+            "street": "R. Antonio S√©rgio Vieiralves sn Carabinane - Novo Aleixo, Manaus - AM, 69098-165",
             "long": -59.9609873,
             "lati": -3.0504233,
             "": ""
         },
         {
             "name": "UBS N-13",
-            "street": "R. 26 DE Agosto (RUA JU¡), S/N, Riacho Doce I E II - Cidade Nova, Manaus - AM, 69095-285",
+            "street": "R. 26 DE Agosto (RUA JU√Å), S/N, Riacho Doce I E II - Cidade Nova, Manaus - AM, 69095-285",
             "long": -59.972283,
             "lati": -3.023804,
             "": ""
         },
         {
             "name": "UBS N-14",
-            "street": "R. F·bio Lucena (COM RUA Menino Jesus), S/N, NSA SRA. DO P. Socorro - Cidade Nova, Manaus - AM, 69095-275",
+            "street": "R. F√°bio Lucena (COM RUA Menino Jesus), S/N, NSA SRA. DO P. Socorro - Cidade Nova, Manaus - AM, 69095-275",
             "long": -59.974891,
             "lati": -3.034793000000001,
             "": ""
@@ -514,21 +514,21 @@ const JSONlist =
         },
         {
             "name": "UBS N-16",
-            "street": "AV. Amazonas ( RUA Inar·), 31, Campo Dourado - Cidade Nova, Manaus - AM, 69099-231",
+            "street": "AV. Amazonas ( RUA Inar√°), 31, Campo Dourado - Cidade Nova, Manaus - AM, 69099-231",
             "long": -59.97798599999999,
             "lati": -3.018603,
             "": ""
         },
         {
             "name": "Ubs N-17",
-            "street": "R. Tucuma, R. Plut„o, sn - Campo Dourado Ii, Manaus - AM, 69099-714",
+            "street": "R. Tucuma, R. Plut√£o, sn - Campo Dourado Ii, Manaus - AM, 69099-714",
             "long": -59.97656259999999,
             "lati": -3.0219731,
             "": ""
         },
         {
             "name": "UBS N-19",
-            "street": "R. S„o Judas Tadeu, 15 - Col. Santo AntÙnio, Manaus - AM, 69093-280",
+            "street": "R. S√£o Judas Tadeu, 15 - Col. Santo Ant√¥nio, Manaus - AM, 69093-280",
             "long": -60.002427,
             "lati": -3.02832,
             "": ""
@@ -549,21 +549,21 @@ const JSONlist =
         },
         {
             "name": "UBS N-22",
-            "street": "R. 20 DE Novembro (Rua Ulisses Guimar„es), 40, Florestal - Monte das Oliveiras, Manaus - AM, 69096-155",
+            "street": "R. 20 DE Novembro (Rua Ulisses Guimar√£es), 40, Florestal - Monte das Oliveiras, Manaus - AM, 69096-155",
             "long": -59.993686,
             "lati": -3.020550000000001,
             "": ""
         },
         {
             "name": "Ubs N-22",
-            "street": "R. Ulisses Guimaraes, R. S„o Paulo, sn - Florestal, Manaus - AM, 69096-155",
+            "street": "R. Ulisses Guimaraes, R. S√£o Paulo, sn - Florestal, Manaus - AM, 69096-155",
             "long": -59.993973,
             "lati": -3.020014,
             "": ""
         },
         {
             "name": "UBS N-23",
-            "street": "R. Pio XII, 22 - ColÙnia Terra Nova, Manaus - AM, 69093-063",
+            "street": "R. Pio XII, 22 - Col√¥nia Terra Nova, Manaus - AM, 69093-063",
             "long": -59.9972292,
             "lati": -3.0198276,
             "": ""
@@ -598,14 +598,14 @@ const JSONlist =
         },
         {
             "name": "UBS N-27",
-            "street": "R. S„o Nicolau esquina com Rua Feliciano, S/N, Monte Pascoal - Monte das Oliveiras, Manaus - AM, 69093-810",
+            "street": "R. S√£o Nicolau esquina com Rua Feliciano, S/N, Monte Pascoal - Monte das Oliveiras, Manaus - AM, 69093-810",
             "long": -59.993956,
             "lati": -3.010859,
             "": ""
         },
         {
             "name": "UBS N-28",
-            "street": "Rua B, S/N, Comunidade VitÛria RÈgia - Santa Etelvina, Manaus - AM, 69059-680",
+            "street": "Rua B, S/N, Comunidade Vit√≥ria R√©gia - Santa Etelvina, Manaus - AM, 69059-680",
             "long": -59.99599699999999,
             "lati": -2.989678,
             "": ""
@@ -619,21 +619,21 @@ const JSONlist =
         },
         {
             "name": "UBS N-30",
-            "street": "R. Santa Helena, 30 - Loteamento Rio Piorini - ColÙnia Terra Nova, Manaus - AM, 69093-645",
+            "street": "R. Santa Helena, 30 - Loteamento Rio Piorini - Col√¥nia Terra Nova, Manaus - AM, 69093-645",
             "long": -60.008193,
             "lati": -3.010539,
             "": ""
         },
         {
             "name": "Ubs N-30",
-            "street": "Rua Sinagoga, R. Santa Helena, sn - ColÙnia Terra Nova, Manaus - AM, 69093-645",
+            "street": "Rua Sinagoga, R. Santa Helena, sn - Col√¥nia Terra Nova, Manaus - AM, 69093-645",
             "long": -60.0080443,
             "lati": -3.010643500000001,
             "": ""
         },
         {
             "name": "UBS N-31",
-            "street": "Av. Chico Mendes com Rua Uni„o, S/N, Buraco Fundo - ColÙnia Terra Nova, Manaus - AM, 69093-437",
+            "street": "Av. Chico Mendes com Rua Uni√£o, S/N, Buraco Fundo - Col√¥nia Terra Nova, Manaus - AM, 69093-437",
             "long": -60.007589,
             "lati": -3.019931,
             "": ""
@@ -647,21 +647,21 @@ const JSONlist =
         },
         {
             "name": "UBS N-33",
-            "street": "R. 31 de MarÁo, S/N, - Novo Israel, Manaus - AM, 69093-575",
+            "street": "R. 31 de Mar√ßo, S/N, - Novo Israel, Manaus - AM, 69093-575",
             "long": -60.007331,
             "lati": -3.027235,
             "": ""
         },
         {
             "name": "UBS N-34",
-            "street": "Rua Maria Mota (AV. S√O Jo„o), S/N, - Comunidade JosÈ Bonif·cio - Col. Santo AntÙnio, Manaus - AM, 69093-161",
+            "street": "Rua Maria Mota (AV. S√ÉO Jo√£o), S/N, - Comunidade Jos√© Bonif√°cio - Col. Santo Ant√¥nio, Manaus - AM, 69093-161",
             "long": -60.010325,
             "lati": -3.036042,
             "": ""
         },
         {
             "name": "UBS N-35",
-            "street": "R; Maranh„o, 1 - Nossa Senhora da ConceiÁ„o - Cidade de Deus, Manaus - AM, 69099-332",
+            "street": "R; Maranh√£o, 1 - Nossa Senhora da Concei√ß√£o - Cidade de Deus, Manaus - AM, 69099-332",
             "long": -59.94392509999999,
             "lati": -3.0229472,
             "": ""
@@ -696,14 +696,14 @@ const JSONlist =
         },
         {
             "name": "UBS N-40",
-            "street": "Rua Xxiv, S/N, ManÙa I - Rua Prof. Manoel BelÈm - Cidade Nova, Manaus - AM, 69093-761",
+            "street": "Rua Xxiv, S/N, Man√¥a I - Rua Prof. Manoel Bel√©m - Cidade Nova, Manaus - AM, 69093-761",
             "long": -59.99625099999999,
             "lati": -3.023353,
             "": ""
         },
         {
             "name": "Ubs N-40",
-            "street": "R 2 sn Cj. ManÙa - Cidade Nova, Manaus - AM, 69093-761",
+            "street": "R 2 sn Cj. Man√¥a - Cidade Nova, Manaus - AM, 69093-761",
             "long": -59.996411,
             "lati": -3.023079,
             "": ""
@@ -738,28 +738,28 @@ const JSONlist =
         },
         {
             "name": "UBS N-46",
-            "street": "Rua Abiu, S/N, Jesus me Deu - ColÙnia Terra Nova, Manaus - AM, 69015-300",
+            "street": "Rua Abiu, S/N, Jesus me Deu - Col√¥nia Terra Nova, Manaus - AM, 69015-300",
             "long": -60.02731060000001,
             "lati": -3.0061625,
             "": ""
         },
         {
             "name": "UBS N-47",
-            "street": "Rua D·lia Vermelha, S/N, Santa Marta - ColÙnia Terra Nova, AM, 69050-000",
+            "street": "Rua D√°lia Vermelha, S/N, Santa Marta - Col√¥nia Terra Nova, AM, 69050-000",
             "long": -60.018506,
             "lati": -3.007991,
             "": ""
         },
         {
             "name": "UBS N-48",
-            "street": "Av. S„o Jo„o - Comunidade S„o Jo„o - Lago Azul, Manaus - AM, 69039-125",
+            "street": "Av. S√£o Jo√£o - Comunidade S√£o Jo√£o - Lago Azul, Manaus - AM, 69039-125",
             "long": -60.03174,
             "lati": -2.94768,
             "": ""
         },
         {
             "name": "UBS N-49",
-            "street": "Rua Campo Grande, esquina com Alameda Rio Negro, - ColÙnia Terra Nova, Manaus - AM, 69050-560",
+            "street": "Rua Campo Grande, esquina com Alameda Rio Negro, - Col√¥nia Terra Nova, Manaus - AM, 69050-560",
             "long": -60.016036,
             "lati": -3.004239,
             "": ""
@@ -773,7 +773,7 @@ const JSONlist =
         },
         {
             "name": "UBS N-51",
-            "street": "Rua Tucano Street, quadra11, Lote 07, comunidade Parque das GarÁas - atual rua Lirio das Indias - Novo Aleixo, Manaus - AM, 69098-164",
+            "street": "Rua Tucano Street, quadra11, Lote 07, comunidade Parque das Gar√ßas - atual rua Lirio das Indias - Novo Aleixo, Manaus - AM, 69098-164",
             "long": -59.96763559999999,
             "lati": -3.0602456,
             "": ""
@@ -822,21 +822,21 @@ const JSONlist =
         },
         {
             "name": "UBS N-56",
-            "street": "Rua Rio Caquet·, Comunidade Lagoa Azul - Lago Azul, Manaus - AM, 69028-346",
+            "street": "Rua Rio Caquet√°, Comunidade Lagoa Azul - Lago Azul, Manaus - AM, 69028-346",
             "long": -60.008545,
             "lati": -2.968193,
             "": ""
         },
         {
             "name": "UBS N-57",
-            "street": "R. NiterÛi - ColÙnia Terra Nova, Manaus - AM, 69058-837",
+            "street": "R. Niter√≥i - Col√¥nia Terra Nova, Manaus - AM, 69058-837",
             "long": -60.0107,
             "lati": -3.001953,
             "": ""
         },
         {
             "name": "UBS N-58",
-            "street": "comunidade ¡guas Claras - R. C3, 02 - Novo Aleixo, Manaus - AM, 69098-032",
+            "street": "comunidade √Åguas Claras - R. C3, 02 - Novo Aleixo, Manaus - AM, 69098-032",
             "long": -59.97385299999999,
             "lati": -3.051434,
             "": ""
@@ -864,7 +864,7 @@ const JSONlist =
         },
         {
             "name": "UBS O-01",
-            "street": "Rua Peixe Cavalo (AV Airton Sena), S/N, Comunidade Uni„o da VitÛria - Tarum„, Manaus - AM, 69095-281",
+            "street": "Rua Peixe Cavalo (AV Airton Sena), S/N, Comunidade Uni√£o da Vit√≥ria - Tarum√£, Manaus - AM, 69095-281",
             "long": -60.029451,
             "lati": -2.976233,
             "": ""
@@ -885,14 +885,14 @@ const JSONlist =
         },
         {
             "name": "UBS O-04",
-            "street": "R. Olinda, 204 - RedenÁ„o, Manaus - AM, 69047-501",
+            "street": "R. Olinda, 204 - Reden√ß√£o, Manaus - AM, 69047-501",
             "long": -60.046339,
             "lati": -3.055473,
             "": ""
         },
         {
             "name": "UBS O-05",
-            "street": "R. Projetada I, 4 - RedenÁ„o, Manaus - AM, 69047-291",
+            "street": "R. Projetada I, 4 - Reden√ß√£o, Manaus - AM, 69047-291",
             "long": -60.0462984,
             "lati": -3.0503275,
             "": ""
@@ -906,21 +906,21 @@ const JSONlist =
         },
         {
             "name": "UBS O-10",
-            "street": "R. 3 - esquina com Rua Airas Santiago - Nova EsperanÁa, Manaus - AM, 69042-101",
+            "street": "R. 3 - esquina com Rua Airas Santiago - Nova Esperan√ßa, Manaus - AM, 69042-101",
             "long": -60.06050699999999,
             "lati": -3.079972,
             "": ""
         },
         {
             "name": "UBS O-11",
-            "street": "R. Osvaldo Barbosa, 12 - Nova EsperanÁa, Manaus - AM, 69037-530",
+            "street": "R. Osvaldo Barbosa, 12 - Nova Esperan√ßa, Manaus - AM, 69037-530",
             "long": -60.05688999999999,
             "lati": -3.087774,
             "": ""
         },
         {
             "name": "UBS O-12",
-            "street": "R. Paranapanema, 32 - LÌrio do Vale, Manaus - AM, 69038-200",
+            "street": "R. Paranapanema, 32 - L√≠rio do Vale, Manaus - AM, 69038-200",
             "long": -60.0639348,
             "lati": -3.0748736,
             "": ""
@@ -941,7 +941,7 @@ const JSONlist =
         },
         {
             "name": "UBS O-19",
-            "street": "R. PlÌnio Coelho, 182 - Compensa, Manaus - AM, 69035-420",
+            "street": "R. Pl√≠nio Coelho, 182 - Compensa, Manaus - AM, 69035-420",
             "long": -60.058524,
             "lati": -3.1117588,
             "": ""
@@ -955,35 +955,35 @@ const JSONlist =
         },
         {
             "name": "UBS O-23",
-            "street": "R. das FlÙres, 10 - Compensa, Manaus - AM, 69035-191",
+            "street": "R. das Fl√¥res, 10 - Compensa, Manaus - AM, 69035-191",
             "long": -60.062328,
             "lati": -3.111156,
             "": ""
         },
         {
             "name": "UBS O-26",
-            "street": "Rua Olenka de Menezes, 26 - S„o Jorge, Manaus - AM, 69033-670",
+            "street": "Rua Olenka de Menezes, 26 - S√£o Jorge, Manaus - AM, 69033-670",
             "long": -60.03937319999999,
             "lati": -3.1129255,
             "": ""
         },
         {
             "name": "UBS O-30",
-            "street": "R. S„o Paulo, 125 - Santo AntÙnio Areal - Santo AntÙnio, Manaus - AM, 69029-550",
+            "street": "R. S√£o Paulo, 125 - Santo Ant√¥nio Areal - Santo Ant√¥nio, Manaus - AM, 69029-550",
             "long": -60.05009099999999,
             "lati": -3.111459999999999,
             "": ""
         },
         {
             "name": "UBS O-33",
-            "street": "R. Lauro Machado, 14 - GlÛria, Manaus - AM, 69027-440",
+            "street": "R. Lauro Machado, 14 - Gl√≥ria, Manaus - AM, 69027-440",
             "long": -60.035756,
             "lati": -3.12449,
             "": ""
         },
         {
             "name": "UBS O-34",
-            "street": "Rua 05 de Junho, 290 - GlÛria, Manaus - AM, 69027-610",
+            "street": "Rua 05 de Junho, 290 - Gl√≥ria, Manaus - AM, 69027-610",
             "long": -60.03472799999999,
             "lati": -3.120761,
             "": ""
@@ -997,14 +997,14 @@ const JSONlist =
         },
         {
             "name": "UBS O-38",
-            "street": "Alameda S„o LuÌs, 56 - Dom Pedro, Manaus - AM, 69042-551",
+            "street": "Alameda S√£o Lu√≠s, 56 - Dom Pedro, Manaus - AM, 69042-551",
             "long": -60.04403499999999,
             "lati": -3.081641,
             "": ""
         },
         {
             "name": "UBS O-40",
-            "street": "AssociaÁ„o de Moradores Noemia Santana - R. Belo Horizonte, 410 - Compensa, Manaus - AM, 69036-100",
+            "street": "Associa√ß√£o de Moradores Noemia Santana - R. Belo Horizonte, 410 - Compensa, Manaus - AM, 69036-100",
             "long": -60.059903,
             "lati": -3.098967,
             "": ""
@@ -1018,35 +1018,35 @@ const JSONlist =
         },
         {
             "name": "UBS O-45",
-            "street": "R. Praia do Futuro, 897, Parque Rio Solimıes - Tarum„, Manaus - AM, 69041-400",
+            "street": "R. Praia do Futuro, 897, Parque Rio Solim√µes - Tarum√£, Manaus - AM, 69041-400",
             "long": -60.04464099999999,
             "lati": -3.001431,
             "": ""
         },
         {
             "name": "UBS O-46",
-            "street": "Rua Raimundo Maia ,S/N, parque S„o Pedro - Tarum„, Manaus - AM, 69049-630",
+            "street": "Rua Raimundo Maia ,S/N, parque S√£o Pedro - Tarum√£, Manaus - AM, 69049-630",
             "long": -60.035446,
             "lati": -2.996476,
             "": ""
         },
         {
             "name": "Ubs O-46",
-            "street": "R. Raimundo Maia, sn - Tarum„, Manaus - AM, 69021-115",
+            "street": "R. Raimundo Maia, sn - Tarum√£, Manaus - AM, 69021-115",
             "long": -60.0344758,
             "lati": -2.9974473,
             "": ""
         },
         {
             "name": "UBS O-47",
-            "street": "RUA Peter Drucker COM RUA Xapur I ( Parque Riachuelo I ) - Tarum„, Manaus - AM, 69041-325",
+            "street": "RUA Peter Drucker COM RUA Xapur I ( Parque Riachuelo I ) - Tarum√£, Manaus - AM, 69041-325",
             "long": -60.044227,
             "lati": -3.019107,
             "": ""
         },
         {
             "name": "UBS O-48",
-            "street": "Rua Sapucaia, S/N, parque Riachuelo - Tarum„, Manaus - AM, 69041-285",
+            "street": "Rua Sapucaia, S/N, parque Riachuelo - Tarum√£, Manaus - AM, 69041-285",
             "long": -60.043799,
             "lati": -3.012086,
             "": ""
@@ -1059,14 +1059,14 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "UBS PetrÛpolis",
-            "street": "R. Delfim de Souza, S/N - PetrÛpolis, Manaus - AM, 69068-460",
+            "name": "UBS Petr√≥polis",
+            "street": "R. Delfim de Souza, S/N - Petr√≥polis, Manaus - AM, 69068-460",
             "long": -59.99319829999999,
             "lati": -3.120647,
             "": ""
         },
         {
-            "name": "UBS PM MAJOR S¡VIO BELOTA",
+            "name": "UBS PM MAJOR S√ÅVIO BELOTA",
             "street": "R. Samambaia, 786 - Santa Etelvina, Manaus - AM, 69059-500",
             "long": -60.0125645,
             "lati": -2.9842749,
@@ -1074,49 +1074,49 @@ const JSONlist =
         },
         {
             "name": "UBS S-01",
-            "street": "RUA Formosa ,S/N(R. Tail‚ndia) Parque DAS NaÁıes - Flores, Manaus - AM, 69028-120",
+            "street": "RUA Formosa ,S/N(R. Tail√¢ndia) Parque DAS Na√ß√µes - Flores, Manaus - AM, 69028-120",
             "long": -60.000013,
             "lati": -3.045059,
             "": ""
         },
         {
             "name": "UBS S-02",
-            "street": "R. ¡ustria, 452 - Parque das NaÁıes, Manaus - AM, 69028-060",
+            "street": "R. √Åustria, 452 - Parque das Na√ß√µes, Manaus - AM, 69028-060",
             "long": -60.00165,
             "lati": -3.048942,
             "": ""
         },
         {
             "name": "UBS S-03",
-            "street": "Comunidade Parque DAS NaÁıes - R. Bar„o de Parima - Flores, Manaus - AM, 69058-230",
+            "street": "Comunidade Parque DAS Na√ß√µes - R. Bar√£o de Parima - Flores, Manaus - AM, 69058-230",
             "long": -59.99538639999999,
             "lati": -3.0447872,
             "": ""
         },
         {
             "name": "UBS S-06",
-            "street": "R. S„o JosÈ - Matinha - Pres. Vargas, Manaus - AM, 69025-260",
+            "street": "R. S√£o Jos√© - Matinha - Pres. Vargas, Manaus - AM, 69025-260",
             "long": -60.030162,
             "lati": -3.119634,
             "": ""
         },
         {
             "name": "UBS S-07",
-            "street": "R. Xavier de MendonÁa, 228 - Nossa Sra. Aparecida, Manaus - AM, 69010-070",
+            "street": "R. Xavier de Mendon√ßa, 228 - Nossa Sra. Aparecida, Manaus - AM, 69010-070",
             "long": -60.03039200000001,
             "lati": -3.129781,
             "": ""
         },
         {
             "name": "UBS S-09",
-            "street": "Av. Rio JutaÌ, 37 - Nossa Sra. das GraÁas, Manaus - AM, 69053-020",
+            "street": "Av. Rio Juta√≠, 37 - Nossa Sra. das Gra√ßas, Manaus - AM, 69053-020",
             "long": -60.02164800000001,
             "lati": -3.104618,
             "": ""
         },
         {
             "name": "UBS S-10",
-            "street": "R. EmÌlio Moreira - Centro, Manaus - AM, 69020-040",
+            "street": "R. Em√≠lio Moreira - Centro, Manaus - AM, 69020-040",
             "long": -60.0155311,
             "lati": -3.1324016,
             "": ""
@@ -1130,21 +1130,21 @@ const JSONlist =
         },
         {
             "name": "UBS S-13",
-            "street": "R. Universal - PrÛximo A Serraria Moraes - Educandos, Manaus - AM, 69070-520",
+            "street": "R. Universal - Pr√≥ximo A Serraria Moraes - Educandos, Manaus - AM, 69070-520",
             "long": -60.00886000000001,
             "lati": -3.138188,
             "": ""
         },
         {
             "name": "UBS S-14",
-            "street": "R. Labor - PrÛximo a Fitejuta - Educandos, Manaus - AM, 69070-410",
+            "street": "R. Labor - Pr√≥ximo a Fitejuta - Educandos, Manaus - AM, 69070-410",
             "long": -60.008363,
             "lati": -3.14344,
             "": ""
         },
         {
             "name": "UBS S-19",
-            "street": "R. Hemeterio Cabrinha, 2 - S„o L·zaro, Manaus - AM, 69073-530",
+            "street": "R. Hemeterio Cabrinha, 2 - S√£o L√°zaro, Manaus - AM, 69073-530",
             "long": -59.99739899999999,
             "lati": -3.140107,
             "": ""
@@ -1186,7 +1186,7 @@ const JSONlist =
         },
         {
             "name": "UBS S-32",
-            "street": "R. Gen. GlicÈrio - Cachoeirinha, Manaus - AM, 69065-140",
+            "street": "R. Gen. Glic√©rio - Cachoeirinha, Manaus - AM, 69065-140",
             "long": -60.00898899999999,
             "lati": -3.125779,
             "": ""
@@ -1200,7 +1200,7 @@ const JSONlist =
         },
         {
             "name": "UBS S-35",
-            "street": "Tv. Nova, 5 - PetrÛpolis, Manaus - AM, 69067-001",
+            "street": "Tv. Nova, 5 - Petr√≥polis, Manaus - AM, 69067-001",
             "long": -59.98884709999999,
             "lati": -3.1091762,
             "": ""
@@ -1214,7 +1214,7 @@ const JSONlist =
         },
         {
             "name": "UBS -S41",
-            "street": "R. Danilo CorrÍa, S/N - PetrÛpolis, Manaus - AM, 69069-400",
+            "street": "R. Danilo Corr√™a, S/N - Petr√≥polis, Manaus - AM, 69069-400",
             "long": -59.991758,
             "lati": -3.1131048,
             "": ""
@@ -1228,49 +1228,49 @@ const JSONlist =
         },
         {
             "name": "UBS S-43",
-            "street": "Rua Campos do Jord„o, 115 - PetrÛpolis, Manaus - AM, 69067-250",
+            "street": "Rua Campos do Jord√£o, 115 - Petr√≥polis, Manaus - AM, 69067-250",
             "long": -59.991407,
             "lati": -3.100382,
             "": ""
         },
         {
             "name": "UBS S-44",
-            "street": "R. Nossa Senhora da ConceiÁ„oa - PetrÛpolis, Manaus - AM, 69063-650",
+            "street": "R. Nossa Senhora da Concei√ß√£oa - Petr√≥polis, Manaus - AM, 69063-650",
             "long": -59.99673199999999,
             "lati": -3.110161999999999,
             "": ""
         },
         {
             "name": "UBS S-46",
-            "street": "Rua Cardoso Nunes, bairro - S„o Francisco, Manaus - AM, 69079-250",
+            "street": "Rua Cardoso Nunes, bairro - S√£o Francisco, Manaus - AM, 69079-250",
             "long": -60.00383609999999,
             "lati": -3.109712999999999,
             "": ""
         },
         {
             "name": "UBS S-48",
-            "street": "R. Pimenta Bueno, 297 - S„o Francisco, Manaus - AM, 69063-120",
+            "street": "R. Pimenta Bueno, 297 - S√£o Francisco, Manaus - AM, 69063-120",
             "long": -60.0008565,
             "lati": -3.1056206,
             "": ""
         },
         {
             "name": "UBS S-49",
-            "street": "Tv. Rio Madeira - PetrÛpolis, Manaus - AM, 69067-560",
+            "street": "Tv. Rio Madeira - Petr√≥polis, Manaus - AM, 69067-560",
             "long": -59.996919,
             "lati": -3.105287,
             "": ""
         },
         {
             "name": "UBS S-50",
-            "street": "R. Gabriel GonÁalves - Aleixo, Manaus - AM, 69060-010",
+            "street": "R. Gabriel Gon√ßalves - Aleixo, Manaus - AM, 69060-010",
             "long": -60.00423499999999,
             "lati": -3.095364,
             "": ""
         },
         {
             "name": "UBS S-51",
-            "street": "R. JosÈ do PatrocÌnio - Aleixo, Manaus - AM, 69060-050",
+            "street": "R. Jos√© do Patroc√≠nio - Aleixo, Manaus - AM, 69060-050",
             "long": -60.00058529999999,
             "lati": -3.0994743,
             "": ""
@@ -1284,7 +1284,7 @@ const JSONlist =
         },
         {
             "name": "UBS S-53",
-            "street": "RUA 3, S/N, Conjunto Beija FlÙr - Flores, Manaus - AM, 69028-402",
+            "street": "RUA 3, S/N, Conjunto Beija Fl√¥r - Flores, Manaus - AM, 69028-402",
             "long": -60.0162165,
             "lati": -3.0575428,
             "": ""
@@ -1305,7 +1305,7 @@ const JSONlist =
         },
         {
             "name": "UBS Silas Oliveira Santos",
-            "street": "R. C, 359 - S„o JosÈ Oper·rio, Manaus - AM, 69086-423",
+            "street": "R. C, 359 - S√£o Jos√© Oper√°rio, Manaus - AM, 69086-423",
             "long": -59.93257639999999,
             "lati": -3.0688195,
             "": ""
@@ -1318,70 +1318,70 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "Ubs Theom·rio Pinto (S-52)",
+            "name": "Ubs Theom√°rio Pinto (S-52)",
             "street": "R. Pedro Dias Leme, sn - Parque Dez de Novembro, Manaus - AM, 69054-470",
             "long": -60.0161567,
             "lati": -3.075233399999999,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de - Ajuricaba",
+            "name": "Unidade B√°sica de Sa√∫de - Ajuricaba",
             "street": "Av. Leste - Alvorada, Manaus - AM, 69046-020",
             "long": -60.0392951,
             "lati": -3.0621871,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de - Leonor de Freitas",
+            "name": "Unidade B√°sica de Sa√∫de - Leonor de Freitas",
             "street": "Av. Brasil - Compensa, Manaus - AM, 69036-240",
             "long": -60.0567137,
             "lati": -3.0975566,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de Bairro da Paz",
-            "street": "Rua Boa EsperanÁa, 35 - Da Paz, Manaus - AM, 69048-120",
+            "name": "Unidade B√°sica de Sa√∫de Bairro da Paz",
+            "street": "Rua Boa Esperan√ßa, 35 - Da Paz, Manaus - AM, 69048-120",
             "long": -60.03227689999999,
             "lati": -3.0590752,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de JosÈ Rayol dos Santos",
+            "name": "Unidade B√°sica de Sa√∫de Jos√© Rayol dos Santos",
             "street": "Av. Constantino Nery, s/n - Flores, Manaus - AM, 69050-001",
             "long": -60.0268567,
             "lati": -3.087552,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Saude L-03",
-            "street": "R. MatusalÈm, 25 - Conj S„o Lucas - Tancredo Neves, Manaus - AM, 69087-032",
+            "name": "Unidade B√°sica de Saude L-03",
+            "street": "R. Matusal√©m, 25 - Conj S√£o Lucas - Tancredo Neves, Manaus - AM, 69087-032",
             "long": -59.9433617,
             "lati": -3.0580179,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Saude L-15",
-            "street": "R. JosÈ Rom„o, 74 - Conjunto Colina do Aleixo, Manaus - AM, 69086-110",
+            "name": "Unidade B√°sica de Saude L-15",
+            "street": "R. Jos√© Rom√£o, 74 - Conjunto Colina do Aleixo, Manaus - AM, 69086-110",
             "long": -59.9596271,
             "lati": -3.0631366,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de Mansour Bulbol",
-            "street": "Av. Des. Jo„o Machado, S/N - Alvorada, Manaus - AM, 69044-000",
+            "name": "Unidade B√°sica de Sa√∫de Mansour Bulbol",
+            "street": "Av. Des. Jo√£o Machado, S/N - Alvorada, Manaus - AM, 69044-000",
             "long": -60.034114,
             "lati": -3.073481699999999,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de RedenÁ„o",
-            "street": "R. Carauari, 22 - RedenÁ„o, Manaus - AM, 69047-000",
+            "name": "Unidade B√°sica de Sa√∫de Reden√ß√£o",
+            "street": "R. Carauari, 22 - Reden√ß√£o, Manaus - AM, 69047-000",
             "long": -60.0462546,
             "lati": -3.05419,
             "": ""
         },
         {
-            "name": "Unidade B·sica de Sa˙de Santa Luzia",
+            "name": "Unidade B√°sica de Sa√∫de Santa Luzia",
             "street": "R. Leopoldo Neves - Santa Luzia, Manaus - AM, 69074-510",
             "long": -60.00609449999999,
             "lati": -3.1371696,
@@ -1389,27 +1389,27 @@ const JSONlist =
         },
         {
             "name": "Unidade Basica Saude L-14",
-            "street": "R. F·bio Lucena, 45 - Tancredo Neves, Manaus - AM, 69095-275",
+            "street": "R. F√°bio Lucena, 45 - Tancredo Neves, Manaus - AM, 69095-275",
             "long": -59.9498131,
             "lati": -3.0549148,
             "": ""
         },
         {
-            "name": "Unidade de Saude B·sica",
+            "name": "Unidade de Saude B√°sica",
             "street": "R. Formosa, 59 - Flores, Manaus - AM, 69028-120",
             "long": -60.0000258,
             "lati": -3.0450683,
             "": ""
         },
         {
-            "name": "ServiÁo de Pronto Atendimeto - SPA Coroado",
+            "name": "Servi√ßo de Pronto Atendimeto - SPA Coroado",
             "street": "Av. Beira Mar, 66 - Coroado, Manaus - AM, 69080-030",
             "long": -59.9814459,
             "lati": -3.0892963,
             "": ""
         },
         {
-            "name": "SPA e PoliclÌnica - Danilo CorrÍa",
+            "name": "SPA e Policl√≠nica - Danilo Corr√™a",
             "street": "Av. Noel Nutels, s/n - Cj. Cidade Nova I, Manaus - AM, 69096-000",
             "long": -59.9775272,
             "lati": -3.0296835,
@@ -1430,36 +1430,36 @@ const JSONlist =
             "": ""
         },
         {
-            "name": "Pronto Socorro da RedenÁ„o Dr. JosÈ Lins",
-            "street": "R. Maracan„, s/n - RedenÁ„o, Manaus - AM, 69047-481",
+            "name": "Pronto Socorro da Reden√ß√£o Dr. Jos√© Lins",
+            "street": "R. Maracan√£, s/n - Reden√ß√£o, Manaus - AM, 69047-481",
             "long": -60.0462041,
             "lati": -3.0516014,
             "": ""
         },
         {
             "name": "SPA Enfermeira Eliameme Rodrigues Mady",
-            "street": "Av. Sama˙ma, s/n - Monte das Oliveiras, Manaus - AM, 69093-132",
+            "street": "Av. Sama√∫ma, s/n - Monte das Oliveiras, Manaus - AM, 69093-132",
             "long": -59.99020299999999,
             "lati": -3.014694,
             "": ""
         },
         {
             "name": "Spa Zona Sul",
-            "street": "R. JosÈ Bento, 33 - ColÙnia Oliveira Machado, Manaus - AM, 69070-650",
+            "street": "R. Jos√© Bento, 33 - Col√¥nia Oliveira Machado, Manaus - AM, 69070-650",
             "long": -60.00824,
             "lati": -3.146392,
             "": ""
         },
         {
-            "name": "SPA S„o Raimundo",
-            "street": "PraÁa Ismael BenÌgno, 155 - S„o Raimundo, Manaus - AM, 69027-320",
+            "name": "SPA S√£o Raimundo",
+            "street": "Pra√ßa Ismael Ben√≠gno, 155 - S√£o Raimundo, Manaus - AM, 69027-320",
             "long": -60.0372582,
             "lati": -3.1275707,
             "": ""
         },
         {
             "name": "UPA 24h - Campos Sales",
-            "street": "Av. Dona OtÌlia, 649 - Tarum„, Manaus - AM, 69021-005",
+            "street": "Av. Dona Ot√≠lia, 649 - Tarum√£, Manaus - AM, 69021-005",
             "long": -60.0431256,
             "lati": -3.0016114,
             "": ""
