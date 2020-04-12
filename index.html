@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 | Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./need-help.js"></script>
+
+    <!-- Maps integration -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div class="w-100 shadow-sm py-3">
+        <div class="text-center">
+            <h4 class="d-inline font-weight-bold">CORONAVÍRUS | </h4>
+            <h4 class="d-inline text-success">Amazonas</h4>
+        </div>
+    </div>
+
+    <div class="text-center my-3">
+        <h6 class="d-inline text-secondary">Amazonense, precisamos da sua colaboração.</h6>
+        <h6 class="d-inline font-weight-bold text-secondary">#FicaEmCasa</h6>
+    </div>
+    <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 80%;">
+        <h6 class="d-inline text-secondary">Última atualização: 02/05 às 20h</h6>
+    </div>
+    <div class="mx-auto mb-5" style="max-width: 1000px; width: 80%;">
+        <div class="row">
+            <div class="col-sm">
+                <div class="my-2 custom-shadow rounded p-3 border-left outline border-primary">
+                    <h2 class="m-0 text-primary">1.072</h2>
+                    <h5 class="m-0 text-secondary">Casos confirmados</h2>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="my-2 custom-shadow rounded p-3 border-left outline border-warning">
+                    <h2 class="m-0 text-warning">640</h2>
+                    <h5 class="m-0 text-secondary">Óbitos</h2>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="my-2 custom-shadow rounded p-3 border-left outline border-danger">
+                    <h2 class="m-0 text-danger">20.000</h2>
+                    <h5 class="m-0 text-secondary">Casos suspeitos</h2>
+                </div>
+            </div>
+        </div>
+
+        <div style="z-index: 100;" class="my-3 row">
+            <div class="col-sm">
+                <div class="my-2 custom-shadow rounded p-3 border-left border-primary">
+                    <h5 class="pb-3 m-0 text-secondary">Casos por zona</h5>
+                    <div id='map' style='width: 100%; height: 405px;'></div>
+                    <script src="./map-generator.js"></script>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="my-2 p-3 custom-shadow rounded border-danger">
+                    <h5 class="p-0 m-0 text-secondary">Estatísticas por zona</h5>
+                    <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
+                    <div id="piechart" style="width: 100%; height: 100%;"></div>
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript" src="./graph-generator.js"></script>
+
+                    <br>
+                    <h6 style="color: red;">6.5% Zona Leste</h6>
+                    <h6 style="color: blue;">35.6% Zona Norte</h6>
+                    <h6 style="color: orange;">6.5% Zona Sul</h6>
+                    <h6 style="color: green;">6.5% Zona Oeste</h6>
+                    <h6 style="color: purple;">22.6% Zona Centro-Sul</h6>
+                    <h6 style="color: cadetblue;">22.6% Zona Centro-Oeste</h6>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <button type="button" onclick="findUBS()" class="btn btn-danger">Preciso de Atendimento</button>
+        <p class="text-muted">
+            Precisaremos utilizar o GPS do dispositivo.
+        </p>
+
+        <div class="card w-100" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Nome da UBS</h5>
+                <h6 class="card-subtitle mb-2 text-muted">A mais próxima do seu local</h6>
+                <p class="card-text">Utilizamos sua localização aproximada, por isso a unidade médica mais próxima de
+                    você pode não ser esta.</p>
+                <a href="#" class="card-link">Abrir no Google Maps</a>
+                <a href="#" class="card-link">Encontrar outra</a>
+            </div>
+        </div>
+
+
+        <div class="my-5" id="accordion">
+            <div class="my-6 card">
+                <div class="card-header bg-warning" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="false" aria-controls="collapseOne">
+                            <h3 style="color: white;">Sintomas da COVID-19</h3>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div style="color: white;" class="font-weight-bold bg-warning card-body">
+                        <p>
+                            - Tosse<br>
+                            - Febre<br>
+                            - Cansaço<br>
+                            - Dificuldade para respirar (em casos graves)<br>
+                        </p>
+                        <h6>Fonte: Organização Mundial da Saúde</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="my-5" id="accordion">
+            <div class="my-6 card">
+                <div class="card-header bg-danger" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <h3 style="color: white;">Como obter ajuda</h3>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div style="color: white;" class="font-weight-bold bg-danger card-body">
+                        <p>
+                            Segundo o Ministério da Saúde, em caso de suspeita por COVID-19, permaneça, junto aos
+                            moradores de sua
+                            residência, em isolamento domiciliar por 14 dias e só procure um hospital se o problema se
+                            agravar.
+                            Fique atento à evolução do quadro clínico e em caso de febre alta e desconforto respiratório
+                            acompanhada
+                            de tosse, procure atendimento médico imediato.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="my-5" id="accordion">
+            <div class="my-6 card">
+                <div class="card-header bg-success" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <h3 style="color: white;">O que fazer nesta quarentena?</h3>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div style="color: white;" class="font-weight-bold bg-success card-body">
+                        <h4>Para se manter conectado e informado</h4>
+
+                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#WORK">Recursos e dicas para
+                            trabalho
+                            remoto</a><br>
+                        <a style="color: white;" href="https://bit.ly/3c80eP9">Encontrar oportunidades de emprego
+                            remotas
+                        </a><br>
+                        <a style="color: white;" href="https://brasil.estadao.com.br/ao-vivo/coronavirus-no-brasil">Ver
+                            as notícias
+                            do COVID-19
+                        </a>
+                        <div class="my-4"></div>
+
+                        <h4>Para educadores</h4>
+
+                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#EDU">Recursos para que
+                            alunos continuem
+                            aprendendo
+                        </a><br>
+                        <a style="color: white;" href="https://teachfromhome.google/intl/pt-BR/">Informações e
+                            ferramentas para
+                            ajudar os professores
+                        </a><br>
+                        <a style="color: white;" href="https://gsuiteupdates-pt.googleblog.com/">Hangouts Meet
+                        </a>
+                        <div class="my-4"></div>
+
+                        <h4>Para empresas</h4>
+
+                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#BUSINESS">
+                            Recursos para garantir que sua empresa continue funcionando
+                        </a><br>
+                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#WORK">
+                            Recursos e dicas para trabalho e aprendizado remoto
+                        </a><br>
+                        <a style="color: white;"
+                            href="https://learndigital.withgoogle.com/ateliedigital/course/digital-marketing">
+                            Obtenha a certificação do Google em Fundamentos do marketing digital
+                        </a><br>
+
+                        <h6 class="mt-5">Fonte: Google</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .custom-shadow {
+        box-shadow: 0px 0px 20px -2px #dddddd;
+    }
+</style>
+
+
+</html>
