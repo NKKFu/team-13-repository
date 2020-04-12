@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVID-19 | Info</title>
+    <title>SAUDE 092 | Dashboard</title>
+
+    <!-- Bootsrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Bootsrap code -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -18,8 +21,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
+    <!-- Our JS scripts -->
     <script src="./ubs-list.js"></script>
-    <script src="./need-help.js"></script>
 
     <!-- Maps integration -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
@@ -38,6 +41,14 @@
         <h6 class="d-inline text-secondary">Amazonense, precisamos da sua colaboração.</h6>
         <h6 class="d-inline font-weight-bold text-secondary">#FicaEmCasa</h6>
     </div>
+
+    <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 80%;">
+        <button type="button" onClick="location.href='./need-help.html'" class="p-3 w-100 btn btn-danger">
+            <h5>Preciso de
+                Atendimento</h5>
+        </button>
+    </div>
+
     <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 80%;">
         <h6 class="d-inline text-secondary">Última atualização: 02/05 às 20h</h6>
     </div>
@@ -90,24 +101,6 @@
                 </div>
             </div>
         </div>
-
-
-        <button type="button" onclick="findUBS()" class="btn btn-danger">Preciso de Atendimento</button>
-        <p class="text-muted">
-            Precisaremos utilizar o GPS do dispositivo.
-        </p>
-
-        <div id="UBS-card" class="d-none card w-100">
-            <div class="card-body">
-                <h5 id="UBS-name" class="card-title">Nome da UBS</h5>
-                <h6 id="UBS-street" class="card-subtitle mb-2 text-muted">Rua da UBS</h6>
-                <p class="card-text">Utilizamos sua localização aproximada, portanto a unidade médica mais próxima
-                    de
-                    você pode não ser esta.</p>
-                <a id="UBS-maps" href="#" class="card-link">Abrir no Google Maps</a>
-            </div>
-        </div>
-
 
         <div class="my-5" id="accordion">
             <div class="my-6 card">
@@ -224,10 +217,28 @@
 </body>
 
 <style>
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     .custom-shadow {
         box-shadow: 0px 0px 20px -2px #dddddd;
     }
-</style>
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+</style>
 
 </html>

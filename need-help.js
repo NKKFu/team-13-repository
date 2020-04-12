@@ -37,7 +37,22 @@ function getLocation() {
 }
 
 function findUBS() {
+    const name = document.getElementById('user_name').value;
+    const number = document.getElementById('user_number').value;
+    const age = document.getElementById('user_age').value;
+    const isGroup = document.getElementById('customControlValidation2').checked;
+
+    const isNotValid = (name == '') || (number == '') || (age == '');
+    
+    if (isNotValid) {
+        document.getElementById('alert-button').classList.remove('d-none');
+        return;
+    }
+
     if (latitude != null) {
+        document.getElementById('register-form').classList.add('d-none');
+        document.getElementById('register-info').classList.remove('d-none');
+
         const CURRENT_UBS = getClosestPoint(latitude, longitude);
         document.getElementById('UBS-card').classList.add('d-block');
         document.getElementById('UBS-name').innerHTML = CURRENT_UBS.name;
@@ -55,7 +70,7 @@ function findUBS() {
                 findUBS();
             });
         } else {
-            alert('Não foi possível utilizar seu GPS');
+            alert('Nï¿½o foi possï¿½vel utilizar seu GPS');
         }
     }
 }
