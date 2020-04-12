@@ -18,6 +18,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
+    <script src="./ubs-list.js"></script>
     <script src="./need-help.js"></script>
 
     <!-- Maps integration -->
@@ -96,14 +97,14 @@
             Precisaremos utilizar o GPS do dispositivo.
         </p>
 
-        <div class="card w-100" style="width: 18rem;">
+        <div id="UBS-card" class="d-none card w-100">
             <div class="card-body">
-                <h5 class="card-title">Nome da UBS</h5>
-                <h6 class="card-subtitle mb-2 text-muted">A mais próxima do seu local</h6>
-                <p class="card-text">Utilizamos sua localização aproximada, por isso a unidade médica mais próxima de
+                <h5 id="UBS-name" class="card-title">Nome da UBS</h5>
+                <h6 id="UBS-street" class="card-subtitle mb-2 text-muted">Rua da UBS</h6>
+                <p class="card-text">Utilizamos sua localização aproximada, portanto a unidade médica mais próxima
+                    de
                     você pode não ser esta.</p>
-                <a href="#" class="card-link">Abrir no Google Maps</a>
-                <a href="#" class="card-link">Encontrar outra</a>
+                <a id="UBS-maps" href="#" class="card-link">Abrir no Google Maps</a>
             </div>
         </div>
 
@@ -150,7 +151,8 @@
                             moradores de sua
                             residência, em isolamento domiciliar por 14 dias e só procure um hospital se o problema se
                             agravar.
-                            Fique atento à evolução do quadro clínico e em caso de febre alta e desconforto respiratório
+                            Fique atento à evolução do quadro clínico e em caso de febre alta e desconforto
+                            respiratório
                             acompanhada
                             de tosse, procure atendimento médico imediato.
                         </p>

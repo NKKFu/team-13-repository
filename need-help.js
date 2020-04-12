@@ -1,25 +1,3 @@
-const JSONlist = [
-    {
-        "UBS A": {
-            "long": 1,
-            "lati": 2
-        }
-    }
-]
-
-var points = [
-    { x: 10, y: 20 },
-    { x: 12, y: 18 },
-    { x: 20, y: 30 },
-    { x: 5, y: 40 },
-    { x: 100, y: 2 }
-];
-
-
-
-
-
-
 function distance(lat1, long1, lat2, long2) {
     "use strict";
     var deg2rad = function (deg) { return deg * (Math.PI / 180); },
@@ -34,28 +12,50 @@ function distance(lat1, long1, lat2, long2) {
     return ((R * c * 1000).toFixed());
 }
 
-function getClosestPoint() {
-    let closest = points.slice(1).reduce(function (min, p) {
-        if (d(p) < min.d) min.point = p;
-        return min;
-    }, { point: points[0], d: d(points[0]) }).point;
+function getClosestPoint(lat, long) {
+    const objectList = JSONlist;
+    let closestPoint;
 
-    return closest;
+
+    let smallestDistance = 100000;
+    for (let i = 0; i < objectList.listOfUbs.length; i++) {
+        const element = objectList.listOfUbs[i];
+        const elementDistance = parseInt(distance(element.lati, element.long, lat, long));
+
+        if (elementDistance < smallestDistance) {
+            closestPoint = element;
+            smallestDistance = elementDistance;
+        }
+    }
+
+    return closestPoint;
 }
 
-//const latitude, longitude;
+let latitude, longitude;
 function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        alert('Não foi possível utilizar seu GPS');
-    }
+    getLocation();
 }
 
 function findUBS() {
-    console.log(distance(-3.046445, -59.965886, -3.015563,-59.967514));
-}
+    if (latitude != null) {
+        const CURRENT_UBS = getClosestPoint(latitude, longitude);
+        document.getElementById('UBS-card').classList.add('d-block');
+        document.getElementById('UBS-name').innerHTML = CURRENT_UBS.name;
+        document.getElementById('UBS-street').innerHTML = CURRENT_UBS.street;
 
-function showPosition(position) {
-    console.log(position.coords);
+        document.getElementById('UBS-maps').onclick = () => {
+            window.open('https://www.google.com/maps/dir/' + latitude + ',' + longitude + '/' + CURRENT_UBS.lati + ',' + CURRENT_UBS.long + '/');
+        }
+
+    } else {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                latitude = position.coords.latitude;
+                longitude = position.coords.longitude;
+                findUBS();
+            });
+        } else {
+            alert('Não foi possível utilizar seu GPS');
+        }
+    }
 }
