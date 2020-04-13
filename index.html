@@ -46,8 +46,8 @@
                     <h4 style="color: #FF383D; font-size: 1.3rem;" class="font-weight-bold mx-3 d-inline">Home</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="#">
-                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Sintomas</h4>
+                <a style="text-decoration: none;" href="./know-more.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Saiba mais</h4>
                 </a>
 
                 <a style="text-decoration: none;" href="./data.html">
@@ -58,9 +58,11 @@
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
                 </a>
 
-                <a href="./need-help.html">
-                    <div style="border-radius: 50px; border: 2px solid #FF383D;" class="py-3 px-5 d-inline">
-                        <h4 style="color: #FF383D; font-size: 1rem;" class="mx-3 d-inline">Atendimento</h4>
+                <a href="./need-help.html" style="text-decoration: none;">
+                    <div style="transition: all 0.5s; border-radius: 50px; border: 2px solid #FF383D;"
+                        class="need-help-button py-3 px-5 d-inline">
+                        <h4 style="color: #FF383D; font-size: 1rem;" class="mx-3 d-inline">Atendimento
+                        </h4>
                     </div>
                 </a>
             </div>
@@ -78,12 +80,14 @@
                     <h1 class="font-weight-bold" style="color: #035755;">Como se sente?</h1>
                     <p class="my-4" style="font-family: 'Acme', sans-serif; font-size: 1.1rem;">A plataforma
                         Saúde 092
-                        lhe manterá informado sobre os casos de COVID-19 nas
+                        lhe manterá informado(a) sobre os casos de COVID-19 nas
                         zonas da cidade de Manaus. Você
                         também poderá realizar uma pré-consulta virtual e achar atendimento perto de você.</p>
-                    <button type="button"
-                        style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; background-color: #FA5652 ;"
-                        class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Começar</button>
+                    <a href="./need-help.html">
+                        <button type="button"
+                            style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; background-color: #FA5652 ;"
+                            class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Fazer pré-consulta</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -107,13 +111,16 @@
                         transmissão e
                         os
                         sintomas do Corona Vírus.</p>
-                    <button type="button"
-                        style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; color: #FA5652; background-color: #fee6e5 ;"
-                        class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Saiba mais..</button>
+                    <a href="./know-more.html">
+                        <button type="button"
+                            style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; color: #FA5652; background-color: #fee6e5 ;"
+                            class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Saiba mais..</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- FOOTER -->
     <div class="w-100 px-5 py-3 pt-5" style="margin-top: 200px;">
@@ -164,6 +171,10 @@
 
     html {
         scroll-behavior: smooth;
+    }
+
+    .need-help-button:hover {
+        background-color: rgb(255, 234, 235);
     }
 </style>
 

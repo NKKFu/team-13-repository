@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SAUDE 092 | Saiba Mais</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" href="./logo.png" title="saude092">
+
+    <!-- Bootsrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Acme font -->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <!-- Bootsrap code -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Our JS scripts -->
+    <script src="./ubs-list.js"></script>
+
+    <!-- Maps integration -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+
+    <div class="w-100 py-3 bg-white shadow-sm "
+        style="font-family: 'Acme', sans-serif; z-index: 10; position: fixed; top: 0px;">
+        <div class="mx-auto" style="max-width: 1500px; width: 80%;">
+            <img src="./logo-extended.png" style=" height: 60px;">
+            <div class="my-3" style="float: right;">
+                <a style="text-decoration: none;" href="./index.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Home</h4>
+                </a>
+
+                <a style="text-decoration: none;" href="#">
+                    <h4 style="color: #FF383D; font-size: 1.3rem;" class="font-weight-bold mx-3 d-inline">Saiba mais
+                    </h4>
+                </a>
+
+                <a style="text-decoration: none;" href="./data.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Dados sobre a
+                        doença</h4>
+                </a>
+
+                <a style="text-decoration: none;" href="#">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
+                </a>
+
+                <a href="./need-help.html" style="text-decoration: none;">
+                    <div style="transition: all 0.5s; border-radius: 50px; border: 2px solid #FF383D;"
+                        class="need-help-button py-3 px-5 d-inline">
+                        <h4 style="color: #FF383D; font-size: 1rem;" class="mx-3 d-inline">Atendimento
+                        </h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto" style="margin-top: 200px; max-width: 1000px; width: 80%;">
+        <h3 class="text-center" style="color: #FA5652;">Covid-19</h3>
+        <h1 class="text-center font-weight-bold" style="color: #035755;">Saiba mais</h1>
+        <p class="text-center my-4" style="font-family: 'Acme', sans-serif; font-size: 1.1rem;">Tenha as informações
+            mais atualizadas da doença</p>
+    </div>
+
+
+    <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 90%;">
+        <h6 class="d-inline text-secondary">Última atualização: 02/05 às 20h</h6>
+    </div>
+    <div class="mx-auto mb-5 shadow p-3 p-sm-5" style="line-height: 2rem; max-width: 1000px; width: 90%;">
+        <h2>O que é coronavírus?</h2>
+        <p class="text-justify" style="text-indent: 3ch;">
+            Coronavírus (CID10) é uma família de vírus que causam infecções
+            respiratórias. O novo
+            agente do coronavírus
+            foi descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada de coronavírus
+            (COVID-19). Os primeiros coronavírus humanos foram isolados pela primeira vez
+            em 1937. No entanto, foi em 1965 que o
+            vírus foi descrito como coronavírus, em decorrência do perfil na microscopia, parecendo uma coroa. A maioria
+            das pessoas se infecta com os coronavírus comuns ao longo
+            da vida, sendo as crianças pequenas mais
+            propensas a se infectarem com o tipo mais comum do vírus. Os coronavírus mais comuns que infectam humanos
+            são o alpha coronavírus 229E e NL63 e beta coronavírus OC43, HKU1.
+        </p>
+
+        <h5>Período de incubação do coronavírus</h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            Período de incubação é o tempo que leva para os primeiros sintomas aparecerem desde a infecção por
+            coronavírus, que pode ser de 2 a 14 dias.
+        </p>
+
+        <h5>Período de transmissibilidade do coronavírus </h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            De uma forma geral, a transmissão viral ocorre apenas enquanto persistirem os sintomas É possível a
+            transmissão viral após a resolução dos sintomas, mas a duração do período de transmissibilidade é
+            desconhecido para o coronavírus. Durante o período de incubação e casos assintomáticos não são contagiosos.
+        </p>
+
+        <h5>Fonte de infecção do coronavírus</h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            A maioria dos coronavírus geralmente infectam apenas uma espécie animal ou pelo menos um pequeno número de
+            espécies proximamente relacionadas. Porém, alguns coronavírus, como o SARS-CoV, podem infectar pessoas e
+            animais. O reservatório animal para o coronavírus (COVID-19) ainda é desconhecido.
+        </p>
+
+        <h5>Quais são os sintomas do coronavírus? </h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            Os sinais e sintomas do coronavírus são principalmente respiratórios, semelhantes a um resfriado. Podem,
+            também, causar infecção do trato respiratório inferior, como as pneumonias. No entanto, o coronavírus
+            (SARS-CoV-2) ainda precisa de mais estudos e investigações para caracterizar melhor os sinais e sintomas da
+            doença.<br>
+            Os principais são sintomas conhecidos até o momento são:<br><br>
+            - Febre.<br>
+            - Tosse.<br>
+            - Dificuldade para respirar.<br>
+        </p>
+
+        <h5>Como o coronavírus é transmitido? </h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            As investigações sobre as formas de transmissão do coronavírus ainda estão em andamento, mas a disseminação
+            de pessoa para pessoa, ou seja, a contaminação por gotículas respiratórias ou contato, está
+            ocorrendo.<br><br>
+
+
+
+            Qualquer pessoa que tenha contato próximo (cerca de 1m) com alguém com sintomas respiratórios está em risco
+            de ser exposta à infecção.<br><br>
+
+
+
+            É importante observar que a disseminação de pessoa para pessoa pode ocorrer de forma continuada.<br><br>
+
+
+
+            Alguns vírus são altamente contagiosos (como sarampo), enquanto outros são menos. Ainda não está claro com
+            que facilidade o coronavírus se espalha de pessoa para pessoa.<br><br>
+
+
+
+            Apesar disso, a transmissão dos coronavírus costuma ocorrer pelo ar ou por contato pessoal com secreções
+            contaminadas, como:<br><br>
+
+
+
+            - gotículas de saliva;<br>
+            - espirro;<br>
+            - tosse;<br>
+            - catarro;<br>
+            - contato pessoal próximo, como toque ou aperto de mão;<br>
+            - contato com objetos ou superfícies contaminadas, seguido de contato com a boca, nariz ou
+            olhos.<br><br><br>
+
+
+            Os coronavírus apresentam uma transmissão menos intensa que o vírus da gripe.<br><br>
+
+
+
+            O período médio de incubação por coronavírus é de 5 dias, com intervalos que chegam a 12 dias, período em
+            que os primeiros sintomas levam para aparecer desde a infecção.<br><br>
+
+
+
+            A transmissibilidade dos pacientes infectados por SARSCoV é em média de 7 dias após o início dos sintomas.
+            No entanto, dados preliminares do coronavírus (SARS-CoV-2) sugerem que a transmissão possa ocorrer mesmo sem
+            o aparecimento de sinais e sintomas.<br><br>
+
+
+
+            Até o momento, não há informaçõesção suficientes de quantos dias anteriores ao início dos sinais e sintomas
+            uma pessoa infectada passa a transmitir o vírus.
+        </p>
+
+        <h5>Como prevenir o coronavírus? </h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            O Ministério da Saúde orienta cuidados básicos para reduzir o risco geral de contrair ou transmitir
+            infecções respiratórias agudas, incluindo o coronavírus. Entre as medidas estão:<br><br>
+
+
+
+            - Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, respeitando os 5 momentos de
+            higienização. Se não houver água e sabonete, usar um desinfetante para as mãos à base de álcool.<br>
+
+            - Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.<br>
+
+            - Evitar contato próximo com pessoas doentes.<br>
+
+            - Ficar em casa quando estiver doente.<br>
+
+            - Cobrir boca e nariz ao tossir ou espirrar com um lenço de papel e jogar no lixo.<br>
+
+            - Limpar e desinfetar objetos e superfícies tocados com freqüência.<br><br>
+
+
+
+            Profissionais de saúde devem utilizar medidas de precaução padrão, de contato e de gotículas (mascára
+            cirúrgica, luvas, avental não estéril e óculos de proteção).<br><br>
+
+
+
+            Para a realização de procedimentos que gerem aerossolização de secreções respiratórias como intubação,
+            aspiração de vias aéreas ou indução de escarro, deverá ser utilizado precaução por aerossóis, com uso de
+            máscara N95.
+        </p>
+
+        <h5>Como é feito o tratamento do coronavírus? </h5>
+        <p class="text-justify" style="text-indent: 3ch;">
+            Não existe tratamento específico para infecções causadas por coronavírus humano. No caso do coronavírus é
+            indicado repouso e consumo de bastante água, além de algumas medidas adotadas para aliviar os sintomas,
+            conforme cada caso, como, por exemplo:<br><br>
+
+
+
+            - Uso de medicamento para dor e febre (antitérmicos e analgésicos).<br>
+
+            - Uso de umidificador no quarto ou tomar banho quente para auxiliar no alívio da dor de garanta e
+            tosse.<br><br>
+
+
+
+            Assim que os primeiros sintomas surgirem, é fundamental procurar ajuda médica imediata para confirmar
+            diagnóstico e iniciar o tratamento.<br><br>
+
+
+
+            Todos os pacientes que receberem alta durante os primeiros 07 dias do início do quadro (qualquer sintoma
+            independente de febre), devem ser alertados para a possibilidade de piora tardia do quadro clínico e sinais
+            de alerta de complicações como: aparecimento de febre (podendo haver casos iniciais sem febre), elevação ou
+            reaparecimento de febre ou sinais respiratórios, taquicardia (aumento dos batimentos cardíacos), dor
+            pleurítica (dor no peito), fadiga (cansaço) e dispnéia (falta de ar).
+        </p>
+
+        <b>
+            <h5>
+                Se você viajou para a China nos últimos 14 dias e ficou doente com febre, tosse ou dificuldade de
+                respirar,
+                deve procurar atendimento médico imediatamente e informar detalhadamente o histórico de viagem recente e
+                seus sintomas.</h5>
+        </b>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div class="w-100 px-5 py-3 pt-5" style="margin-top: 200px;">
+        <img src="./logo.png" style="float: left; height: 60px;">
+
+        <div class="" style="float: right;">
+            <img src="./home-assets/facebook.png" style="float: left; margin-right: 5vw; height: 30px;">
+            <img src="./home-assets/youtube.png" style="float: left; margin-right: 5vw; height: 30px;">
+        </div>
+
+        <h6 style="color: #8f8282; margin-top: 120px; text-align: center;">2020 @ Todos direitos reservados por Saude
+            092
+        </h6>
+    </div>
+    </div>
+</body>
+
+<style>
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .custom-shadow {
+        box-shadow: 0px 0px 20px -2px #dddddd;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .special-background {
+        background-image: url("./home-assets/background.png");
+        background-repeat: no-repeat;
+        background-position: 90vh 80px;
+    }
+
+    body {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        background: linear-gradient(to bottom, #fff 0%, #fff 80%, rgba(246, 246, 246, 1) 85%, #fee6e5 100%);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+</html>
