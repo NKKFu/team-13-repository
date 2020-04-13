@@ -43,7 +43,8 @@ function findUBS() {
     const isGroup = document.getElementById('customControlValidation2').checked;
 
     const isNotValid = (name == '') || (number == '') || (age == '');
-    
+
+    /* Validação de dados */
     if (isNotValid) {
         document.getElementById('alert-button').classList.remove('d-none');
         return;
@@ -62,6 +63,11 @@ function findUBS() {
             window.open('https://www.google.com/maps/dir/' + latitude + ',' + longitude + '/' + CURRENT_UBS.lati + ',' + CURRENT_UBS.long + '/');
         }
 
+        // É grupo de risco?
+        if (isGroup) {
+            document.getElementById('risk-group-info').classList.remove('d-none');
+        }
+
     } else {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
@@ -70,7 +76,7 @@ function findUBS() {
                 findUBS();
             });
         } else {
-            alert('N�o foi poss�vel utilizar seu GPS');
+            alert('Não foi possível utilizar seu GPS');
         }
     }
 }

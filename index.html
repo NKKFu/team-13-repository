@@ -3,14 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAUDE 092 | Dashboard</title>
+    <title>SAUDE 092 | Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="icon" href="./logo.png" title="saude092">
 
     <!-- Bootsrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Acme font -->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
     <!-- Bootsrap code -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -32,193 +36,98 @@
 </head>
 
 <body>
-    <div class="w-100 shadow-sm py-3 bg-white" style="z-index: 10; position: fixed; top: 0px;">
-        <div class="text-center">
-            <h4 class="d-inline font-weight-bold">COVID-19 | </h4>
-            <h4 class="d-inline text-success">Amazonas</h4>
+
+    <div class="w-100 py-3 bg-white shadow-sm "
+        style="font-family: 'Acme', sans-serif; z-index: 10; position: fixed; top: 0px;">
+        <div class="mx-auto" style="max-width: 1500px; width: 80%;">
+            <img src="./logo-extended.png" style=" height: 60px;">
+            <div class="my-3" style="float: right;">
+                <a style="text-decoration: none;" href="#">
+                    <h4 style="color: #FF383D; font-size: 1.3rem;" class="font-weight-bold mx-3 d-inline">Home</h4>
+                </a>
+
+                <a style="text-decoration: none;" href="#">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Sintomas</h4>
+                </a>
+
+                <a style="text-decoration: none;" href="./data.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Dados sobre a doença</h4>
+                </a>
+
+                <a style="text-decoration: none;" href="#">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
+                </a>
+
+                <a href="./need-help.html">
+                    <div style="border-radius: 50px; border: 2px solid #FF383D;" class="py-3 px-5 d-inline">
+                        <h4 style="color: #FF383D; font-size: 1rem;" class="mx-3 d-inline">Atendimento</h4>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div style="margin-top: 100px;">
-
+    <div class="container" style="margin-top: 30vh; width: 95%; max-width: 1500px;">
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-md-6">
+                <img src="./home-assets/background.png" style="width: 100%;" />
+            </div>
+            <div class="col-12 col-md-6">
+                <div style="margin-top: 100px; padding: 0;">
+                    <h3 style="color: #FA5652;">COVID-19</h3>
+                    <h1 class="font-weight-bold" style="color: #035755;">Como se sente?</h1>
+                    <p class="my-4" style="font-family: 'Acme', sans-serif; font-size: 1.1rem;">A plataforma
+                        Saúde 092
+                        lhe manterá informado sobre os casos de COVID-19 nas
+                        zonas da cidade de Manaus. Você
+                        também poderá realizar uma pré-consulta virtual e achar atendimento perto de você.</p>
+                    <button type="button"
+                        style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; background-color: #FA5652 ;"
+                        class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Começar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="text-center my-3">
-        <h6 class="d-inline text-secondary">Amazonense, precisamos da sua colaboração.</h6>
-        <h6 class="d-inline font-weight-bold text-secondary">#FicaEmCasa</h6>
-    </div>
 
-    <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 80%;">
-        <button type="button" onClick="location.href='./need-help.html'" class="p-3 w-100 btn btn-danger">
-            <h5>Preciso de
-                Atendimento</h5>
-        </button>
-    </div>
-
-    <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 80%;">
-        <h6 class="d-inline text-secondary">Última atualização: 02/05 às 20h</h6>
-    </div>
-    <div class="mx-auto mb-5" style="max-width: 1000px; width: 80%;">
+    <div class="container" style="margin-top: 30vh; width: 95%; max-width: 1500px;">
         <div class="row">
-            <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left outline border-primary">
-                    <h2 class="m-0 text-primary">1.072</h2>
-                    <h5 class="m-0 text-secondary">Casos confirmados</h2>
-                </div>
+            <div class="col-12 col-md-6">
+                <img src="./home-assets/virus-image.png" style="width: 100%;" />
             </div>
-            <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left outline border-warning">
-                    <h2 class="m-0 text-warning">640</h2>
-                    <h5 class="m-0 text-secondary">Óbitos</h2>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left outline border-danger">
-                    <h2 class="m-0 text-danger">20.000</h2>
-                    <h5 class="m-0 text-secondary">Casos suspeitos</h2>
-                </div>
-            </div>
-        </div>
-
-        <div style="z-index: 100;" class="my-3 row">
-            <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left border-primary">
-                    <h5 class="pb-3 m-0 text-secondary">Casos por zona</h5>
-                    <div id='map' style='width: 100%; height: 405px;'></div>
-                    <script src="./map-generator.js"></script>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="my-2 p-3 custom-shadow rounded border-danger">
-                    <h5 class="p-0 m-0 text-secondary">Estatísticas por zona</h5>
-                    <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
-                    <div id="piechart" style="width: 100%; height: 100%;"></div>
-                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <script type="text/javascript" src="./graph-generator.js"></script>
-
-                    <br>
-                    <h6 style="color: red;">6.5% Zona Leste</h6>
-                    <h6 style="color: blue;">35.6% Zona Norte</h6>
-                    <h6 style="color: orange;">6.5% Zona Sul</h6>
-                    <h6 style="color: green;">6.5% Zona Oeste</h6>
-                    <h6 style="color: purple;">22.6% Zona Centro-Sul</h6>
-                    <h6 style="color: cadetblue;">22.6% Zona Centro-Oeste</h6>
-                    </ul>
+            <div class="col-12 col-md-6">
+                <div style="margin-top: 100px; padding: 0;">
+                    <h3 style="color: #FA5652;">O que é COVID-19?</h3>
+                    <h1 class="font-weight-bold" style="color: #035755;">Coronavirus</h1>
+                    <p class="my-4" style="font-family: 'Acme', sans-serif; font-size: 1.1rem;">Os COVID-19 são um
+                        tipo
+                        de vírus. Existem muitos tipos diferentes e alguns causam sintomas que atingem principalmente o
+                        sistema
+                        respiratório. O Mundo está enfrentando uma pandemia desta doença e é necessário conhecer a
+                        transmissão e
+                        os
+                        sintomas do Corona Vírus.</p>
+                    <button type="button"
+                        style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; color: #FA5652; background-color: #fee6e5 ;"
+                        class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Saiba mais..</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="my-5" id="accordion">
-            <div class="my-6 card">
-                <div class="card-header bg-warning" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="false" aria-controls="collapseOne">
-                            <h3 style="color: white;">Sintomas da COVID-19</h3>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div style="color: white;" class="font-weight-bold bg-warning card-body">
-                        <p>
-                            - Tosse<br>
-                            - Febre<br>
-                            - Cansaço<br>
-                            - Dificuldade para respirar (em casos graves)<br>
-                        </p>
-                        <h6>Fonte: Organização Mundial da Saúde</h6>
-                    </div>
-                </div>
-            </div>
+    <!-- FOOTER -->
+    <div class="w-100 px-5 py-3 pt-5" style="margin-top: 200px;">
+        <img src="./logo.png" style="float: left; height: 60px;">
+
+        <div class="" style="float: right;">
+            <img src="./home-assets/facebook.png" style="float: left; margin-right: 5vw; height: 30px;">
+            <img src="./home-assets/youtube.png" style="float: left; margin-right: 5vw; height: 30px;">
         </div>
 
-
-        <div class="my-5" id="accordion">
-            <div class="my-6 card">
-                <div class="card-header bg-danger" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                            aria-expanded="false" aria-controls="collapseTwo">
-                            <h3 style="color: white;">Como obter ajuda?</h3>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div style="color: white;" class="font-weight-bold bg-danger card-body">
-                        <p>
-                            Segundo o Ministério da Saúde, em caso de suspeita por COVID-19, permaneça, junto aos
-                            moradores de sua
-                            residência, em isolamento domiciliar por 14 dias e só procure um hospital se o problema se
-                            agravar.
-                            Fique atento à evolução do quadro clínico e em caso de febre alta e desconforto
-                            respiratório
-                            acompanhada
-                            de tosse, procure atendimento médico imediato.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="my-5" id="accordion">
-            <div class="my-6 card">
-                <div class="card-header bg-success" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                            aria-expanded="false" aria-controls="collapseThree">
-                            <h3 style="color: white;">O que fazer nesta quarentena?</h3>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div style="color: white;" class="font-weight-bold bg-success card-body">
-                        <h4>Para se manter conectado e informado</h4>
-
-                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#WORK">Recursos e dicas para
-                            trabalho
-                            remoto</a><br>
-                        <a style="color: white;" href="https://bit.ly/3c80eP9">Encontrar oportunidades de emprego
-                            remotas
-                        </a><br>
-                        <a style="color: white;" href="https://brasil.estadao.com.br/ao-vivo/coronavirus-no-brasil">Ver
-                            as notícias
-                            do COVID-19
-                        </a>
-                        <div class="my-4"></div>
-
-                        <h4>Para educadores</h4>
-
-                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#EDU">Recursos para que
-                            alunos continuem
-                            aprendendo
-                        </a><br>
-                        <a style="color: white;" href="https://teachfromhome.google/intl/pt-BR/">Informações e
-                            ferramentas para
-                            ajudar os professores
-                        </a><br>
-                        <a style="color: white;" href="https://gsuiteupdates-pt.googleblog.com/">Hangouts Meet
-                        </a>
-                        <div class="my-4"></div>
-
-                        <h4>Para empresas</h4>
-
-                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#BUSINESS">
-                            Recursos para garantir que sua empresa continue funcionando
-                        </a><br>
-                        <a style="color: white;" href="https://events.withgoogle.com/emcasa/#WORK">
-                            Recursos e dicas para trabalho e aprendizado remoto
-                        </a><br>
-                        <a style="color: white;"
-                            href="https://learndigital.withgoogle.com/ateliedigital/course/digital-marketing">
-                            Obtenha a certificação do Google em Fundamentos do marketing digital
-                        </a><br>
-
-                        <h6 class="mt-5">Fonte: Google</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h6 style="color: #8f8282; margin-top: 120px; text-align: center;">2020 @ Todos direitos reservados por Saude
+            092
+        </h6>
+    </div>
     </div>
 </body>
 
@@ -241,9 +150,20 @@
         display: none;
     }
 
+    .special-background {
+        background-image: url("./home-assets/background.png");
+        background-repeat: no-repeat;
+        background-position: 90vh 80px;
+    }
+
     body {
         animation-name: fadeIn;
         animation-duration: 2s;
+        background: linear-gradient(to bottom, #fff 0%, #fff 80%, rgba(246, 246, 246, 1) 85%, #fee6e5 100%);
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 </style>
 

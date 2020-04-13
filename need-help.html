@@ -16,33 +16,23 @@
 </head>
 
 <body>
-    <div class="w-100 shadow-sm py-3 bg-white" style="position: fixed; top: 0px;">
+    <div class="w-100 shadow-sm py-3 bg-white" style="z-index: 10; height: 65px; position: fixed; top: 0px;">
         <div class="text-center">
-            <h4 class="d-inline font-weight-bold">COVID-19 | </h4>
-            <h4 class="d-inline text-success">Amazonas</h4>
+            <h4 class="font-weight-bold text-danger">ATENDIMENTO</h2>
         </div>
     </div>
 
     <a href="./index.html">
         <img src="./left-arrow.png" width="30" height="30" alt=""
-            style="cursor: pointer; position: fixed; top: 18px; left: 18px;">
+            style="cursor: pointer; position: fixed; z-index: 15; top: 18px; left: 18px;">
     </a>
 
     <div style="margin-top: 100px;">
 
     </div>
 
-    <div class="text-center my-3">
-        <h6 class="d-inline text-secondary">Amazonense, precisamos da sua colaboração.</h6>
-        <h6 class="d-inline font-weight-bold text-secondary">#FicaEmCasa</h6>
-    </div>
-
     <div class="mx-auto my-5" style="max-width: 1000px; width: 80%;">
         <form id="register-form" class="">
-
-            <div class="text-center mb-5">
-                <h1 class="d-inline font-weight-bold text-danger">Necessita de Atendimento?</h1>
-            </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6 p-3 p-sm-5">
@@ -116,6 +106,22 @@
                             0s</b></p>
                     <a id="UBS-maps" href="#" class="card-link">Abrir no Google Maps</a>
                 </div>
+            </div>
+        </div>
+
+        <div id="risk-group-info" class="d-none">
+            <div class="card-body">
+                <h3 id="" class="text-center text-danger card-title">Você faz parte do grupo de risco</h3>
+                <h6 id="" class="card-subtitle mb-2 text-muted">Portanto seu código de cadastro é gerado imediatamente:
+                    23874218374982
+                </h6>
+                <h4 class="card-text">Instruções de atendimento:<br>
+                    <h6>
+                        <b>- NÃO ATUALIZE ESTA PÁGINA</b><br>
+                        <b>- Fique atento ao seu celular, mandaremos uma mensagem por lá.</b><br>
+                        <b>- Espere surgir uma nova instrução.</b>
+                    </h6>
+                </h4>
             </div>
         </div>
     </div>
