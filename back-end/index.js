@@ -21,9 +21,6 @@ app.get(('/find/:lati/:long'), (req, res) => {
     res.send(ubsController.getClosestPoint(req.params.lati, req.params.long))
 });
 
-console.log(process.env.EMAIL_ADDRESS);
-
-
 app.post(('/patient/new'), (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',

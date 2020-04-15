@@ -54,14 +54,20 @@ function findUBS() {
         document.getElementById('register-form').classList.add('d-none');
         document.getElementById('register-info').classList.remove('d-none');
 
-        const CURRENT_UBS = getClosestPoint(latitude, longitude);
         document.getElementById('UBS-card').classList.add('d-block');
-        document.getElementById('UBS-name').innerHTML = CURRENT_UBS.name;
-        document.getElementById('UBS-street').innerHTML = CURRENT_UBS.street;
 
-        document.getElementById('UBS-maps').onclick = () => {
-            window.open('https://www.google.com/maps/dir/' + latitude + ',' + longitude + '/' + CURRENT_UBS.lati + ',' + CURRENT_UBS.long + '/');
-        }
+        fetch('http://localhost:3000/find/' + latitude + '/' + longitude)
+            .then((response) => response.json())
+            .then((responseData) => {
+                document.getElementById('UBS-card').classList.add('d-block');
+                document.getElementById('UBS-name').innerHTML = responseData.name;
+                document.getElementById('UBS-street').innerHTML = responseData.street;
+
+                document.getElementById('UBS-maps').onclick = () => {
+                    window.open('https://www.google.com/maps/dir/' + latitude + ',' + longitude + '/' + responseData.lati + ',' + responseData.long + '/');
+                }
+            })
+            .catch(error => console.warn(error));
 
         // É grupo de risco?
         if (isGroup) {
