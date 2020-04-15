@@ -11,8 +11,8 @@
 
     <link rel="icon" href="./logo.png" title="saude092">
 
-    <script src="./ubs-list.js"></script>
-    <script src="./need-help.js"></script>
+    <script src="./scripts/ubs-list.js"></script>
+    <script src="./scripts/need-help.js"></script>
 </head>
 
 <body>
@@ -145,9 +145,67 @@
             display: none;
         }
 
+        .special-background {
+            background-image: url("./home-assets/background.png");
+            background-repeat: no-repeat;
+            background-position: 90vh 80px;
+        }
+
         body {
             animation-name: fadeIn;
             animation-duration: 2s;
+            background: linear-gradient(to bottom, #fff 0%, #fff 80%, rgba(246, 246, 246, 1) 85%, #fee6e5 100%);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #hamburguer {
+            display: none;
+        }
+
+        .nav-options {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-options a h4 {
+            margin-bottom: 0;
+        }
+
+        .not-active {
+            padding-top: 0.3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-options {
+                transition: all 0.3s;
+                position: absolute;
+                right: 0;
+                height: 92vh;
+                width: 70%;
+                background-color: rgba(240, 240, 240, 0.924);
+                flex-direction: column;
+                align-items: center;
+                transform: translateX(100%);
+            }
+
+            .nav-options a {
+                margin-top: 40px;
+            }
+
+            #hamburguer {
+                display: inline;
+            }
+        }
+
+        .need-help-button:hover {
+            background-color: rgb(255, 234, 235);
+        }
+
+        .nav-active {
+            transform: translateX(0%);
         }
     </style>
 

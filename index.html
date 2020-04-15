@@ -27,9 +27,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- Our JS scripts -->
-    <script src="./ubs-list.js"></script>
-
     <!-- Maps integration -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
@@ -41,21 +38,22 @@
         style="font-family: 'Acme', sans-serif; z-index: 10; position: fixed; top: 0px;">
         <div class="mx-auto" style="max-width: 1500px; width: 80%;">
             <img src="./logo-extended.png" style=" height: 60px;">
-            <div class="my-3" style="float: right;">
+            <div id="nav-options" class="nav-options my-3" style="float: right;">
                 <a style="text-decoration: none;" href="#">
-                    <h4 style="color: #FF383D; font-size: 1.3rem;" class="font-weight-bold mx-3 d-inline">Home</h4>
+                    <h4 style="color: #FF383D; font-size: 1.3rem;" class="mb-3 font-weight-bold mx-3">
+                        Home</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="./know-more.html">
-                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Saiba mais</h4>
+                <a class="not-active" style="text-decoration: none;" href="./know-more.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3">Saiba mais</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="./data.html">
-                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Dados sobre a doença</h4>
+                <a class="not-active" style="text-decoration: none;" href="./data.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3">Dados sobre a doença</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="#">
-                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
+                <a class="not-active" style="text-decoration: none;" href="#">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3">Notícias</h4>
                 </a>
 
                 <a href="./need-help.html" style="text-decoration: none;">
@@ -66,6 +64,23 @@
                     </div>
                 </a>
             </div>
+            <img src="./home-assets/hamburguer-icon.png" id="hamburguer" style="float: right; height: 50px;">
+            <script>
+                document.addEventListener('click', function (event) {
+                    const isClickInsideHamburguer = document.getElementById('hamburguer').contains(event.target);
+                    const isClickInside = document.getElementById('nav-options').contains(event.target);
+                    const isOpen = document.getElementById('nav-options').classList.contains('nav-active');
+
+                    if (isClickInsideHamburguer) {
+                        console.log('2');
+                        document.getElementById('nav-options').classList.toggle('nav-active');
+                    } else if (!isClickInside && isOpen) {
+                        console.log('1');
+
+                        document.getElementById('nav-options').classList.toggle('nav-active');
+                    }
+                });
+            </script>
         </div>
     </div>
 
@@ -86,7 +101,8 @@
                     <a href="./need-help.html">
                         <button type="button"
                             style="font-family: 'Acme', sans-serif; font-size: 1rem; margin-top: 30px; background-color: #FA5652 ;"
-                            class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Fazer pré-consulta</button>
+                            class="btn btn-primary btn-lg rounded-pill border-0 px-5 py-3">Fazer
+                            pré-consulta</button>
                     </a>
                 </div>
             </div>
@@ -105,7 +121,8 @@
                     <h1 class="font-weight-bold" style="color: #035755;">Coronavirus</h1>
                     <p class="my-4" style="font-family: 'Acme', sans-serif; font-size: 1.1rem;">Os COVID-19 são um
                         tipo
-                        de vírus. Existem muitos tipos diferentes e alguns causam sintomas que atingem principalmente o
+                        de vírus. Existem muitos tipos diferentes e alguns causam sintomas que atingem
+                        principalmente o
                         sistema
                         respiratório. O Mundo está enfrentando uma pandemia desta doença e é necessário conhecer a
                         transmissão e
@@ -131,7 +148,8 @@
             <img src="./home-assets/youtube.png" style="float: left; margin-right: 5vw; height: 30px;">
         </div>
 
-        <h6 style="color: #8f8282; margin-top: 120px; text-align: center;">2020 @ Todos direitos reservados por Saude
+        <h6 style="color: #8f8282; margin-top: 120px; text-align: center;">2020 @ Todos direitos reservados por
+            Saude
             092
         </h6>
     </div>
@@ -173,8 +191,51 @@
         scroll-behavior: smooth;
     }
 
+    #hamburguer {
+        display: none;
+    }
+
+    .nav-options {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-options a h4 {
+        margin-bottom: 0;
+    }
+
+    .not-active {
+        padding-top: 0.3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav-options {
+            transition: all 0.3s;
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            width: 70%;
+            background-color: rgba(240, 240, 240, 0.924);
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+        }
+
+        .nav-options a {
+            margin-top: 40px;
+        }
+
+        #hamburguer {
+            display: inline;
+        }
+    }
+
     .need-help-button:hover {
         background-color: rgb(255, 234, 235);
+    }
+
+    .nav-active {
+        transform: translateX(0%);
     }
 </style>
 

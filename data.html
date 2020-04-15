@@ -27,9 +27,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- Our JS scripts -->
-    <script src="./ubs-list.js"></script>
-
     <!-- Maps integration -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
@@ -41,21 +38,24 @@
         style="font-family: 'Acme', sans-serif; z-index: 10; position: fixed; top: 0px;">
         <div class="mx-auto" style="max-width: 1500px; width: 80%;">
             <img src="./logo-extended.png" style=" height: 60px;">
-            <div class="my-3" style="float: right;">
+
+
+
+            <div id="nav-options" class="nav-options my-3" style="float: right;">
                 <a style="text-decoration: none;" href="./index.html">
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Home</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="./know-more.html">
+                <a class="not-active" style="text-decoration: none;" href="./know-more.html">
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Saiba mais</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="#">
-                    <h4 style="color: #FF383D; font-size: 1.3rem;" class="font-weight-bold mx-3 d-inline">Dados sobre a
+                <a class="not-active" style="text-decoration: none;" href="#">
+                    <h4 style="color: #FF383D; font-size: 1.3rem;" class="mb-3 font-weight-bold mx-3">Dados sobre a
                         doença</h4>
                 </a>
 
-                <a style="text-decoration: none;" href="#">
+                <a class="not-active" style="text-decoration: none;" href="#">
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
                 </a>
 
@@ -67,6 +67,23 @@
                     </div>
                 </a>
             </div>
+            <img src="./home-assets/hamburguer-icon.png" id="hamburguer" style="float: right; height: 50px;">
+            <script>
+                document.addEventListener('click', function (event) {
+                    const isClickInsideHamburguer = document.getElementById('hamburguer').contains(event.target);
+                    const isClickInside = document.getElementById('nav-options').contains(event.target);
+                    const isOpen = document.getElementById('nav-options').classList.contains('nav-active');
+
+                    if (isClickInsideHamburguer) {
+                        console.log('2');
+                        document.getElementById('nav-options').classList.toggle('nav-active');
+                    } else if (!isClickInside && isOpen) {
+                        console.log('1');
+
+                        document.getElementById('nav-options').classList.toggle('nav-active');
+                    }
+                });
+            </script>
         </div>
     </div>
 
@@ -108,7 +125,7 @@
                 <div class="my-2 custom-shadow rounded p-3 border-left border-primary">
                     <h5 class="pb-3 m-0 text-secondary">Casos por zona</h5>
                     <div id='map' style='width: 100%; height: 405px;'></div>
-                    <script src="./map-generator.js"></script>
+                    <script src="./scripts/map-generator.js"></script>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -117,7 +134,7 @@
                     <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
                     <div id="piechart" style="width: 100%; height: 100%;"></div>
                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <script type="text/javascript" src="./graph-generator.js"></script>
+                    <script type="text/javascript" src="./scripts/graph-generator.js"></script>
 
                     <br>
                     <h6 style="color: red;">6.5% Zona Leste</h6>
@@ -309,6 +326,54 @@
     html {
         scroll-behavior: smooth;
     }
+
+    #hamburguer {
+        display: none;
+    }
+
+    .nav-options {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-options a h4 {
+        margin-bottom: 0;
+    }
+
+    .not-active {
+        padding-top: 0.3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav-options {
+            transition: all 0.3s;
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            width: 70%;
+            background-color: rgba(240, 240, 240, 0.924);
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+        }
+
+        .nav-options a {
+            margin-top: 40px;
+        }
+
+        #hamburguer {
+            display: inline;
+        }
+    }
+
+    .need-help-button:hover {
+        background-color: rgb(255, 234, 235);
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
 </style>
+
 
 </html>
