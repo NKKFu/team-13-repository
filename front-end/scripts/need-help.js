@@ -56,7 +56,7 @@ function findUBS() {
 
         document.getElementById('UBS-card').classList.add('d-block');
 
-        fetch('http://localhost:3000/find/' + latitude + '/' + longitude)
+        fetch('https://saude-092.herokuapp.com/find/' + latitude + '/' + longitude)
             .then((response) => response.json())
             .then((responseData) => {
                 document.getElementById('UBS-card').classList.add('d-block');
