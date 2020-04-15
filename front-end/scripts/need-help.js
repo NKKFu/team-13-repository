@@ -54,8 +54,6 @@ function findUBS() {
         document.getElementById('register-form').classList.add('d-none');
         document.getElementById('register-info').classList.remove('d-none');
 
-        document.getElementById('UBS-card').classList.add('d-block');
-
         fetch('https://saude-092.herokuapp.com/find/' + latitude + '/' + longitude)
             .then((response) => response.json())
             .then((responseData) => {
@@ -66,6 +64,8 @@ function findUBS() {
                 document.getElementById('UBS-maps').onclick = () => {
                     window.open('https://www.google.com/maps/dir/' + latitude + ',' + longitude + '/' + responseData.lati + ',' + responseData.long + '/');
                 }
+                
+                document.getElementById('UBS-card').classList.add('d-block');
             })
             .catch(error => console.warn(error));
 
