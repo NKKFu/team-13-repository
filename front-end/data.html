@@ -34,30 +34,33 @@
 
 <body>
 
-    <div class="w-100 py-3 bg-white shadow-sm "
+    <div class="w-100 bg-white shadow-sm "
         style="font-family: 'Acme', sans-serif; z-index: 10; position: fixed; top: 0px;">
         <div class="mx-auto" style="max-width: 1500px; width: 80%;">
-            <img src="./logo-extended.png" style=" height: 60px;">
-
-
-
-            <div id="nav-options" class="nav-options my-3" style="float: right;">
-                <a class="not-active" style="text-decoration: none;" href="./index.html">
+            <img src="./logo-extended.png" style=" height: 60px; margin-top: 20px;">
+            <div id="nav-options" class="nav-options mt-0 mb-3" style="float: right;">
+                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="./index.html">
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Home</h4>
                 </a>
 
-                <a class="not-active" style="text-decoration: none;" href="./know-more.html">
+                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="./know-more.html">
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Saiba mais</h4>
                 </a>
 
-                <a class="not-active" style="text-decoration: none;" href="#">
+                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="#">
                     <h4 style="color: #FF383D; font-size: 1.3rem;" class="mb-3 font-weight-bold mx-3">Dados sobre a
                         doença</h4>
                 </a>
 
-                <a class="not-active" style="text-decoration: none;" href="#">
+                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="#">
                     <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
                 </a>
+
+                <div style="border-radius: 75px; border: 1px solid red; margin-top: 25px;">
+                    <a class="not-active" style="text-decoration: none;" href="#">
+                        <h4 style="color: #035755; font-size: 1rem;" class="mx-3 p-3">Atendimento</h4>
+                    </a>
+                </div>
             </div>
             <img src="./home-assets/hamburguer-icon.png" id="hamburguer" style="float: right; height: 50px;">
             <script>
@@ -87,41 +90,52 @@
     </div>
 
 
-    <div class="mx-auto mt-5" style="text-align: right; max-width: 1000px; width: 80%;">
+    <div class="mx-auto mt-5" style="text-align: right; width: 98%;">
         <h6 class="d-inline text-secondary">Última atualização: 02/05 às 20h</h6>
     </div>
-    <div class="mx-auto mb-5" style="max-width: 1000px; width: 80%;">
+    <div class="mx-auto mb-5" style="width: 98%;">
         <div class="row">
             <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left outline border-primary">
-                    <h2 class="m-0 text-primary">1.072</h2>
+                <div class="my-2 custom-shadow rounded p-3 border-left outline border-danger">
+                    <h2 class="m-0 text-danger">1.072</h2>
                     <h5 class="m-0 text-secondary">Casos confirmados</h2>
+                </div>
+                <div class="my-4 custom-shadow rounded p-3">
+                    <h5 class="p-0 m-0 text-secondary">Casos por bairros</h5>
+                    <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
+                    <h6 style="line-height: 2rem;">
+                        <b class="text-danger">150</b> Novo Aleixo<br>
+                        <b class="text-danger">60</b> Alvorada<br>
+                        <b class="text-danger">54</b> Cidade Nova<br>
+                        <b class="text-danger">30</b> Parque Dez<br>
+                        <b class="text-danger">23</b> Distrito<br>
+                        <b class="text-danger">7</b> Lago Azul<br>
+                    </h6>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="my-2 custom-shadow rounded p-3 border-left border-primary">
+                    <h5 class="pb-3 m-0 text-secondary">Casos por zona</h5>
+                    <div id='map' style='width: 100%; height: 500px;'></div>
+                    <script src="./scripts/data.js"></script>
+                    <script src="./scripts/map-generator.js"></script>
+                    <style>
+                        .marker {
+                            display: block;
+                            border: none;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            padding: 0;
+                        }
+                    </style>
                 </div>
             </div>
             <div class="col-sm">
                 <div class="my-2 custom-shadow rounded p-3 border-left outline border-warning">
-                    <h2 class="m-0 text-warning">640</h2>
-                    <h5 class="m-0 text-secondary">Óbitos</h2>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left outline border-danger">
-                    <h2 class="m-0 text-danger">20.000</h2>
+                    <h2 class="m-0 text-warning">20.000</h2>
                     <h5 class="m-0 text-secondary">Casos suspeitos</h2>
                 </div>
-            </div>
-        </div>
-
-        <div style="z-index: 100;" class="my-3 row">
-            <div class="col-sm">
-                <div class="my-2 custom-shadow rounded p-3 border-left border-primary">
-                    <h5 class="pb-3 m-0 text-secondary">Casos por zona</h5>
-                    <div id='map' style='width: 100%; height: 405px;'></div>
-                    <script src="./scripts/map-generator.js"></script>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="my-2 p-3 custom-shadow rounded border-danger">
+                <div class="my-4 p-3 custom-shadow rounded border-danger">
                     <h5 class="p-0 m-0 text-secondary">Estatísticas por zona</h5>
                     <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
                     <div id="piechart" style="width: 100%; height: 100%;"></div>

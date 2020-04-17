@@ -9,7 +9,7 @@ var geojson = {
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [-66.324462890625, -16.024695711685304]
+                'coordinates': [-59.979644, -3.043429]
             }
         },
         {
@@ -42,8 +42,14 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibmtrZiIsImEiOiJjazh3Y2hobG8wY3ZyM21tYzhicmhrM
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    center: [-59.8653054, -3.0631661], // starting position
-    zoom: 10 // starting zoom
+    center: [-59.9653054, -3.0631661], // starting position
+    zoom: 11, // starting zoom
+    maxZoom: 12,
+    minZoom: 11 ,
+    maxBounds: [
+        [-60.2653054, -3.1631661], // Southwest coordinates
+        [-59.6653054, -2.9631661] // Northeast coordinates
+    ]
 });
 
 geojson.features.forEach(function (marker) {
