@@ -6,13 +6,13 @@
 
 # Saude 092
 
-### Sobre
+## Sobre
 
 A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hack Saúde 2020 a partir da produção de solução para instrumentos de acesso a informação e postos de atendimento em saúde pública.
 
-### Funcionamento da Plataforma
+## Funcionamento da Plataforma
 
-#### Cliente (front-end)
+### Cliente (front-end)
 
 A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo hospedada na plataforma Github Pages. A parte de [atendimento](#Atendimento) é um formulário onde um paciente com suspeita de Covid-19 responde perguntas do tipo "Você está com falta de ar?" e o próprio sistema passa instruções ao paciente, sendo três casos possíveis:
 
@@ -22,24 +22,24 @@ A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo 
 
 - Caso 3 (Sintomas graves de COVID-19) -> O sistema manda um email à central e mostra à pessoa qual é a unidade médica mais próxima dela de acordo com a resposta de seu geolocalizador (GPS)
 
-**Preview funcional**: https://nkkfu.github.io/team-13-repository/front-end/
+Preview funcional: https://nkkfu.github.io/team-13-repository/front-end/
 
-#### Atendimento (back-end)
+### Atendimento (back-end)
 
 A parte de atendimento ao cliente é um bate-papo desenvolvido com **Socket.IO** com o propósito do paciente receber instruções corretas por uma pessoa. 
 
-**Preview funcional:** https://nkkfu.github.io/team-13-repository/back-end/pages/admin.html
+Preview funcional: https://nkkfu.github.io/team-13-repository/back-end/pages/admin.html
 
-#### Cadastro (back-end)
+### Cadastro (back-end)
 
 Todo paciente cadastrado pela Saude 092 será catalogado no email da unidade à ser encaminhado, porém como o projeto ainda não está em sua forma de produção a visualização de todos e-mails está disponível abertamente à qualquer um em: https://maildrop.cc/inbox/ubs-2914
 
 
-### Executando front-end
+## Executando front-end
 
 > A parte front-end do sistema está toda desenvolvida em HTML5 nativo portanto não há necessidade de passos adicionais, basta abrir o arquivo /front-end/index.html em qualquer navegador (browser), recomendamos o Google Chrome. 
 
-### Executando back-end
+## Executando back-end
 
 > Todo o sistema backend da plataforma está sendo executado dentro da plataforma Heroku em sua versão gratuita
 
@@ -68,20 +68,20 @@ Corpo da mensagem (body) ->
     }
 ```
 
-### Criadores
+## Criadores
 
 | **Nelson Kenmochi** | **Glauco Soprano** | **Karla Pereira** |
 | :------------: | :------------: | :------------: |
 | ![](https://i.ibb.co/LhVkGjS/Whats-App-Image-2020-04-12-at-11-30-29.jpg)   | ![](https://i.ibb.co/2gMgm7j/Whats-App-Image-2020-04-12-at-11-58-11.jpg)  | ![](https://i.ibb.co/KNHDWhH/karla.png) |
 | Desenvolvedor | Biotecnólogo | Negócios |
 
-### Tecnologias envolvidas
+## Tecnologias envolvidas
 
-- Back-end : [NodeJS](https://nodejs.org/), [Socket.IO](https://socket.io/), [Heroku](https://www.heroku.com/), [Github Pages](https://pages.github.com/), [Express](https://expressjs.com/pt-br/), API REST, [Saude092-chat](https://github.com/NKKFu/saude092-chat)
-- Front-end : HTML5, CSS, Js, [Bootstrap 4](https://getbootstrap.com/)
+- Back-end : [NodeJS](https://nodejs.org/), [Socket.IO](https://socket.io/), [Heroku](https://www.heroku.com/), [Github Pages](https://pages.github.com/), [nodemailer](https://nodemailer.com/), [Express](https://expressjs.com/pt-br/), API REST, [Saude092-chat](https://github.com/NKKFu/saude092-chat)
+- Front-end : HTML5, CSS, JavaScript, [Bootstrap 4](https://getbootstrap.com/)
 - Dependências : [CORS](https://www.npmjs.com/package/cors),  [dotenv](https://www.npmjs.com/package/dotenv),  [Express](https://expressjs.com/pt-br/),  [nodemailer](https://nodemailer.com/),  [Socket.IO](https://socket.io/)
 
-### Repositórios adicionais (complementares)
+## Repositórios adicionais (complementares)
 
 https://nodemailer.com/
 
