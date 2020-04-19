@@ -66,7 +66,8 @@
                     </a>
                 </div>
             </div>
-            <img class="mt-3" src="./home-assets/hamburguer-icon.png" id="hamburguer" style="float: right; height: 50px;">
+            <img class="mt-3" src="./home-assets/hamburguer-icon.png" id="hamburguer"
+                style="float: right; height: 50px;">
             <script>
                 document.addEventListener('click', function (event) {
                     const isClickInsideHamburguer = document.getElementById('hamburguer').contains(event.target);
@@ -95,32 +96,57 @@
 
 
     <div class="mx-auto mt-5" style="text-align: right; width: 98%;">
-        <h6 class="d-inline text-secondary">Última atualização: Não atualizado</h6>
+        <h6 class="d-inline text-secondary">Última atualização: 18/04/2020</h6>
     </div>
     <div class="mx-auto mb-5" style="width: 98%;">
         <div class="row">
             <div class="col-sm">
                 <div class="my-2 custom-shadow rounded p-3 border-left outline border-danger">
-                    <h2 class="m-0 text-danger">1.072</h2>
+                    <h2 class="m-0 text-danger">1.593</h2>
                     <h5 class="m-0 text-secondary">Casos confirmados</h2>
                 </div>
                 <div class="my-4 custom-shadow rounded p-3">
-                    <h5 class="p-0 m-0 text-secondary">Casos por bairros</h5>
+                    <h5 class="p-0 m-0 text-secondary">Bairros com mais casos</h5>
                     <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
                     <h6 style="line-height: 2rem;">
-                        <b class="text-danger">150</b> Novo Aleixo<br>
-                        <b class="text-danger">60</b> Alvorada<br>
-                        <b class="text-danger">54</b> Cidade Nova<br>
-                        <b class="text-danger">30</b> Parque Dez<br>
-                        <b class="text-danger">23</b> Distrito<br>
-                        <b class="text-danger">7</b> Lago Azul<br>
+                        <b class="text-danger">1°</b> Aleixo<br>
+                        <b class="text-danger">2°</b> Parque Dez<br>
+                        <b class="text-danger">3°</b> Cidade Nova<br>
+                        <b class="text-danger">4°</b> Centro<br>
+                        <b class="text-danger">5°</b> Alvorada<br>
                     </h6>
                 </div>
             </div>
             <div class="col-lg-8">
                 <div class="my-2 custom-shadow rounded p-3 border-left border-primary">
-                    <h5 class="pb-3 m-0 text-secondary">Casos por zona</h5>
-                    <div id='map' style='width: 100%; height: 500px;'></div>
+                    <h5 class="pb-3 m-0 text-secondary">Casos por bairros</h5>
+                    <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
+                    <div class='tableauPlaceholder' id='viz1587310714756' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PainelCOVID-19Resumo&#47;Bairros&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='path'
+                                value='views&#47;PainelCOVID-19Resumo&#47;Bairros?:embed=y&amp;:display_count=y' />
+                            <param name='toolbar' value='no' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PainelCOVID-19Resumo&#47;Bairros&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' /></object></div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1587310714756');
+                        var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+
+                    <!-- <div id='map' style='width: 100%; height: 500px;'></div>
                     <script src="./scripts/data.js"></script>
                     <script src="./scripts/map-generator.js"></script>
                     <style>
@@ -131,16 +157,25 @@
                             cursor: pointer;
                             padding: 0;
                         }
-                    </style>
+                    </style> -->
                 </div>
             </div>
             <div class="col-sm">
                 <div class="my-2 custom-shadow rounded p-3 border-left outline border-warning">
-                    <h2 class="m-0 text-warning">20.000</h2>
-                    <h5 class="m-0 text-secondary">Casos suspeitos</h2>
+                    <h2 class="m-0 text-warning">156</h2>
+                    <h5 class="m-0 text-secondary">Internados com COVID-19</h2>
                 </div>
                 <div class="my-4 p-3 custom-shadow rounded border-danger">
-                    <h5 class="p-0 m-0 text-secondary">Estatísticas por zona</h5>
+                    <h5 class="p-0 m-0 text-secondary">Outros municípios</h5>
+                    <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
+                    <h6 style="line-height: 2rem;">
+                        <b class="text-danger">177</b> Manacapuru<br>
+                        <b class="text-danger">21</b> Iranduba<br>
+                        <b class="text-danger">15</b> Itacoatiara<br>
+                        <b class="text-danger">12</b> Tonantins<br>
+                        <b class="text-danger">11</b> São Paulo de Olivença<br>
+                    </h6>
+                    <!-- <h5 class="p-0 m-0 text-secondary">Estatísticas por bairro</h5>
                     <hr class="w-100 my-3 " style="border-color: rgba(219, 233, 245, 0.6);" />
                     <div id="piechart" style="width: 100%; height: 100%;"></div>
                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -152,21 +187,13 @@
                     <h6 style="color: orange;">6.5% Zona Sul</h6>
                     <h6 style="color: green;">6.5% Zona Oeste</h6>
                     <h6 style="color: purple;">22.6% Zona Centro-Sul</h6>
-                    <h6 style="color: cadetblue;">22.6% Zona Centro-Oeste</h6>
+                    <h6 style="color: cadetblue;">22.6% Zona Centro-Oeste</h6> -->
                     </ul>
                 </div>
             </div>
         </div>
+        <i><h6>Fonte(s): <a href="http://www.saude.am.gov.br/painel/corona/">SUSAM</a></h6><i>
     </div>
-
-
-
-
-
-
-
-
-
 
     <!-- FOOTER -->
     <div class="w-100 px-5 py-3 pt-5" style="margin-top: 200px;">

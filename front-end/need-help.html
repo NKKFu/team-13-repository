@@ -330,6 +330,7 @@
 
                                 socket.on('connectToRoom', function (data) {
                                     console.log('My room ID is ' + data);
+                                    alert('Você está na sala ' + roomID)
                                     roomID = data;
                                 });
 
@@ -357,7 +358,7 @@
                             }
 
                             function sendMessage() {
-                                if (!socket)
+                                if (!roomID)
                                     return;
 
                                 const cardHolder = document.createElement('div');
@@ -416,16 +417,29 @@
             }
 
             function nextForm() {
+                const name = document.getElementById('name-input').value;
+                const number = document.getElementById('number-input').value;
+                const age = document.getElementById('age-input').value;
+
+                const groupRiskInput = document.querySelector("input[name=group]:checked");
+                const groupRisk = groupRiskInput ? groupRiskInput.value : "";
+
+                const marksInput = Array.prototype.slice.call(document.getElementsByName('mark')).filter(value => {
+                    return value.checked;
+                }).map(element => {
+                    return element = element.value;
+                });
+                const marks = marksInput;
+
+                const feverInput = document.querySelector("input[name=fever]:checked");
+                const fever = feverInput ? feverInput.value : "";
+
+                const airInput = document.querySelector("input[name=air]:checked");
+                const air = airInput ? airInput.value : "";
+
                 switch (formCounter) {
                     case 0:
-                        const name = document.getElementById('name-input').value;
-                        const number = document.getElementById('number-input').value;
-                        const age = document.getElementById('age-input').value;
-
-                        const groupRiskInput = document.querySelector("input[name=group]:checked");
-                        const groupRisk = groupRiskInput ? groupRiskInput.value : "";
-
-                        if (!name || !number || !age) {
+                        if (name === '' || number === '' || age === '') {
                             alert('Preencha todos os campos obrigatórios');
                             return;
                         }
@@ -433,19 +447,6 @@
                         console.log(name, number, age, groupRisk);
                         break;
                     case 1:
-                        const marksInput = Array.prototype.slice.call(document.getElementsByName('mark')).filter(value => {
-                            return value.checked;
-                        }).map(element => {
-                            return element = element.value;
-                        });
-                        const marks = marksInput;
-
-                        const feverInput = document.querySelector("input[name=fever]:checked");
-                        const fever = feverInput ? feverInput.value : "";
-
-                        const airInput = document.querySelector("input[name=air]:checked");
-                        const air = airInput ? airInput.value : "";
-
                         console.log(marks, fever, air);
                         break;
                 }
@@ -464,12 +465,38 @@
                     nextFormTitle.classList.add('title-active');
                     formCounter++;
                 }
+
+                const currentCase = 1;
+                switch (currentCase) {
+                    case 1:
+                        sendEmail(name, age, groupRisk, marks, number);
+                        break;
+                }
+
                 if (formCounter == 2) {
                     console.log('End of form');
 
                     // Form acabou, enviar resultado
                     ConnectToServer();
                     document.getElementById('end3').classList.remove('d-none');
+                }
+            }
+
+            function sendEmail(name, age, group, marks, number) {
+                const Http = new XMLHttpRequest();
+                Http.open("POST", 'https://saude-092.herokuapp.com/patient/new');
+                Http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                Http.send(JSON.stringify({
+                    name,
+                    email: 'ubs-2914@maildrop.cc',
+                    age,
+                    isGroup: group,
+                    marks,
+                    contact: number,
+                }));
+
+                Http.onreadystatechange = (e) => {
+                    console.log(Http.responseText)
                 }
             }
         </script>
