@@ -43,21 +43,21 @@ Com o NodeJS e as dependências do projeto instaladas, utilize o comando
 
 na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
 
-- Rota *POST* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.
-Query params -> 
-:lati -> Int - Latitude
+- Rota *POST* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.<br>
+Query params -> <br>
+:lati -> Int - Latitude<br>
 :long -> Int - Longitude
 
-- Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.
-Corpo da mensagem (body) -> 
-{
-    email: String,
-    name: String,
-    age: Int,
-    isGroup: String,
-    marks: String,
-    contact: String,
-    };
+- Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.<br>
+Corpo da mensagem (body) -> <br>
+{<br>
+    email: String,<br>
+    name: String,<br>
+    age: Int,<br>
+    isGroup: String,<br>
+    marks: String,<br>
+    contact: String,<br>
+    };<br>
 }
 
 ### Criadores
