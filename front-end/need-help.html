@@ -48,23 +48,22 @@
                 </div>
             </div>
             <div style="background-color: rgb(24, 163, 0);" class="rounded-bottom content pb-5">
-                <div class="pb-3 d-none" id="form0">
+                <div class="pb-3" id="form0">
                     <h2>Dados Pessoais</h2>
                     <form>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nome*</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp"
                                 placeholder="Insira seu nome">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Telefone</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1"
+                            <label for="exampleInputPassword1">Telefone*</label>
+                            <input type="number" class="form-control" id="number-input"
                                 placeholder="Insira seu número de telefone">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Idade</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1"
-                                placeholder="Insira sua idade">
+                            <label for="exampleInputPassword1">Idade*</label>
+                            <input type="number" class="form-control" id="age-input" placeholder="Insira sua idade">
                         </div>
                     </form>
                     <h2>Grupo de Risco</h2>
@@ -78,7 +77,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="group" value="60 anos" type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Idosos (tenho mais de 60
                                             anos)</div>
                                     </label>
@@ -86,13 +85,13 @@
                                 </div>
                                 <div class="col-4">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="group" value="Asmatico" type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Asmáticos</div>
                                     </label>
                                 </div>
                                 <div class="col-4">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="group" value="Diabetico" type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%">Diabéticos</div>
                                     </label>
                                 </div>
@@ -114,14 +113,14 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Coriza" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Coriza</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Nariz entupido" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Nariz entupido</div>
                                     </label>
 
@@ -130,14 +129,14 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Cansaço" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Cansaço</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Tosse" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%">Tosse</div>
                                     </label>
                                 </div>
@@ -145,14 +144,15 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Dor de cabeça" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Dor de cabeça</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Dores no corpo ou mal estar"
+                                            type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%">Dores no corpo ou mal
                                             estar</div>
                                     </label>
@@ -161,14 +161,15 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Dor de garganta" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Dor de garganta</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Diarreia ou dores abdominais"
+                                            type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%">Diarreia ou dores
                                             abdominais</div>
                                     </label>
@@ -177,7 +178,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Perda de olfato" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Perda de olfato (não
                                             sentir cheiro)</div>
                                     </label>
@@ -185,7 +186,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" type="checkbox">
+                                        <input class="mark-button" name="mark" value="Perda do paladar" type="checkbox">
                                         <div class="p-3 rounded checkmark" style="width: 100%">Perda do paladar (não
                                             sentir gosto)</div>
                                     </label>
@@ -201,7 +202,8 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="fever" value="Não, não estou sentido febre"
+                                            type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Não, não estou sentido
                                             febre
                                         </div>
@@ -210,8 +212,8 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias.
+                                        <input class="mark-button" name="fever" value="Sim, à 2 dias" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias
                                         </div>
                                     </label>
                                 </div>
@@ -220,15 +222,17 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias.
+                                        <input class="mark-button" name="fever" value="Sim, entre 2 à 4 dias"
+                                            type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias
                                         </div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="fever" value="Sim, à mais de 4 dias"
+                                            type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à mais de 4 dias
                                             atrás.
                                         </div>
@@ -245,7 +249,8 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="air" value="Não, não estou sentido falta de ar"
+                                            type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Não, não estou sentido
                                             falta de ar
                                         </div>
@@ -254,8 +259,8 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias.
+                                        <input class="mark-button" name="air" value="Sim, à 2 dias" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias
                                         </div>
                                     </label>
                                 </div>
@@ -264,15 +269,17 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias.
+                                        <input class="mark-button" name="air" value="Sim, entre 2 à 4 dias"
+                                            type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias
                                         </div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <input class="mark-button" name="air" value="Sim, à mais de 4 dias"
+                                            type="radio">
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à mais de 4 dias
                                             atrás.
                                         </div>
@@ -285,55 +292,103 @@
                         <button onclick="nextForm()" type="button" class="btn btn-primary float-right">Próximo</button>
                     </form>
                 </div>
-                <div class="pb-3 " id="form2">
-                    <div class="d-none">
+                <div class="pb-3 d-none" id="form2">
+                    <div id="end1" class="d-none">
                         <h2>Instruções</h2>
                         <h5>Identificamos que você não está em caso grave da COVID-19, as orientações da plataform é de
                             isolamento social. <b>Caso seus sintomas aumentem de proporção, procure um médico ou faça
                                 uma nova
                                 consulta na Saude 092.</b></h5>
                     </div>
-                    <div class="d-none">
+                    <div id="end2" class="d-none">
                         <h2>Encaminhamento</h2>
                         <h5>Para podermos encaminhar você à uma unidade médica</h5>
                     </div>
-                    <div>
+                    <div id="end3" class="d-none">
                         <h2>Fale com um de nossos atendentes</h2>
                         <h6>Nossa inteligência artifical não conseguiu proceder corretamente. Vamos falar com você pelo
-                            bate-papo abaixo.</h6>
+                            bate-papo abaixo. (Espere algum atendente entrar em contato com você)</h6>
 
                         <div id="chat-history" style="height: 400px; color: black; overflow:scroll;"
                             class="p-3 bg-light rounded-top">
                             <div class="p-3 rounded mb-3 shadow-sm" style="width: 80%; background-color: #fff">
-                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
-                                </h5>
-                            </div>
-                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
-                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
-                                </h5>
-                            </div>
-                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
-                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
-                                </h5>
-                            </div>
-                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
-                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
-                                </h5>
-                            </div>
-                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
-                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
+                                <h5>Olá, como posso ajudar?
                                 </h5>
                             </div>
                         </div>
                         <script>
                             const div = document.getElementById("chat-history");
                             div.scrollTop = div.scrollHeight;
+
+                            let socket, roomID;
+
+                            function ConnectToServer() {
+                                socket = io('https://chat-saude092.herokuapp.com/');
+                                socket.on('connect', function (data) {
+                                    socket.emit('JoinRoom');
+                                });
+
+                                socket.on('connectToRoom', function (data) {
+                                    console.log('My room ID is ' + data);
+                                    roomID = data;
+                                });
+
+                                socket.on('message', function (author, msg) {
+                                    if (msg.length < 1)
+                                        return;
+
+                                    const cardHolder = document.createElement('div');
+
+                                    const messageCard = document.createElement('div');
+                                    messageCard.classList.add("p-3", "rounded", "my-3", "shadow-sm");
+                                    messageCard.style = "width: 80%; background-color: #fff";
+
+                                    const messageContent = document.createElement('h5');
+                                    messageContent.innerHTML = msg;
+                                    messageCard.appendChild(messageContent);
+
+                                    cardHolder.appendChild(messageCard);
+
+                                    document.getElementById('chat-history').appendChild(cardHolder);
+
+                                    const div = document.getElementById("chat-history");
+                                    div.scrollTop = div.scrollHeight;
+                                });
+                            }
+
+                            function sendMessage() {
+                                if (!socket)
+                                    return;
+
+                                const cardHolder = document.createElement('div');
+
+                                const msgValue = document.getElementById('chat-input').value;
+                                document.getElementById('chat-input').value = "";
+
+                                socket.emit('messageToServer', 'SAUDE', roomID, msgValue);
+
+                                const messageCard = document.createElement('div');
+                                messageCard.classList.add("p-3", "rounded", "my-3", "shadow-sm");
+                                messageCard.style = "margin-left:20%; width: 80%; background-color: rgb(231, 231, 231)";
+
+                                const messageContent = document.createElement('h5');
+                                messageContent.innerHTML = msgValue;
+                                messageCard.appendChild(messageContent);
+
+                                cardHolder.appendChild(messageCard);
+
+                                document.getElementById('chat-history').appendChild(cardHolder);
+
+                                const div = document.getElementById("chat-history");
+                                div.scrollTop = div.scrollHeight;
+                            }
                         </script>
                         <div class="d-flex">
-                            <input class="form-control form-control-lg" style="height: 60px; border-radius: 0;" type="text"
-                                placeholder="Digite algo..">
+                            <input id="chat-input" class="form-control form-control-lg"
+                                style="height: 60px; border-radius: 0;" type="text" placeholder="Digite algo..">
 
-                            <button type="button" style="height: 60px; border-radius: 0;" class="px-5 py-3 btn btn-primary">ENVIAR</button>
+                            <button onclick="sendMessage()" type="button" style="height: 60px; border-radius: 0;"
+                                class="px-5 py-3 btn btn-primary">ENVIAR</button>
                         </div>
                     </div>
                 </div>
@@ -361,6 +416,40 @@
             }
 
             function nextForm() {
+                switch (formCounter) {
+                    case 0:
+                        const name = document.getElementById('name-input').value;
+                        const number = document.getElementById('number-input').value;
+                        const age = document.getElementById('age-input').value;
+
+                        const groupRiskInput = document.querySelector("input[name=group]:checked");
+                        const groupRisk = groupRiskInput ? groupRiskInput.value : "";
+
+                        if (!name || !number || !age) {
+                            alert('Preencha todos os campos obrigatórios');
+                            return;
+                        }
+
+                        console.log(name, number, age, groupRisk);
+                        break;
+                    case 1:
+                        const marksInput = Array.prototype.slice.call(document.getElementsByName('mark')).filter(value => {
+                            return value.checked;
+                        }).map(element => {
+                            return element = element.value;
+                        });
+                        const marks = marksInput;
+
+                        const feverInput = document.querySelector("input[name=fever]:checked");
+                        const fever = feverInput ? feverInput.value : "";
+
+                        const airInput = document.querySelector("input[name=air]:checked");
+                        const air = airInput ? airInput.value : "";
+
+                        console.log(marks, fever, air);
+                        break;
+                }
+
                 if (formCounter < 2) {
                     // Elemento atual
                     const currentForm = document.getElementById('form' + formCounter);
@@ -374,8 +463,13 @@
                     nextFormTitle.classList.remove('form-title');
                     nextFormTitle.classList.add('title-active');
                     formCounter++;
-                } else {
+                }
+                if (formCounter == 2) {
+                    console.log('End of form');
+
                     // Form acabou, enviar resultado
+                    ConnectToServer();
+                    document.getElementById('end3').classList.remove('d-none');
                 }
             }
         </script>
