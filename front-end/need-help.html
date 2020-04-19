@@ -353,6 +353,11 @@
                                     socket.emit('JoinRoom');
                                 });
 
+                                socket.on('errorToJoin', function () {
+                                    alert('Não há atendentes no momento, tentar novamente?');
+                                    socket.emit('JoinRoom');
+                                });
+
                                 socket.on('connectToRoom', function (data) {
                                     console.log('My room ID is ' + data);
                                     alert('Você está na sala ' + roomID)
@@ -446,8 +451,12 @@
                 const number = document.getElementById('number-input').value;
                 const age = document.getElementById('age-input').value;
 
-                const groupRiskInput = document.querySelector("input[name=group]:checked");
-                const groupRisk = groupRiskInput ? groupRiskInput.value : "";
+                const groupRiskInput = Array.prototype.slice.call(document.getElementsByName('group')).filter(value => {
+                    return value.checked;
+                }).map(element => {
+                    return element = element.value;
+                });
+                const groupRisk = groupRiskInput;
 
                 const marksInput = Array.prototype.slice.call(document.getElementsByName('mark')).filter(value => {
                     return value.checked;
