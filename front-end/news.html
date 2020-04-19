@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SAUDE 092 | Sobre</title>
+    <title>SAUDE 092 | Notícias</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -43,7 +43,8 @@
                 </a>
 
                 <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="./know-more.html">
-                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Saiba mais</h4>
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Saiba mais
+                    </h4>
                 </a>
 
                 <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="./data.html">
@@ -51,12 +52,13 @@
                         doença</h4>
                 </a>
 
-                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="./news.html">
-                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Notícias</h4>
+                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="#">
+                    <h4 style="color: #FF383D; font-size: 1.3rem; font-weight: bold;" class="mx-3 d-inline">Notícias
+                    </h4>
                 </a>
 
-                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="#">
-                    <h4 style="color: #FF383D; font-size: 1.3rem; font-weight: bold;" class="mx-3 d-inline">Sobre
+                <a class="not-active" style="margin-top: 33px; text-decoration: none;" href="./about.html">
+                    <h4 style="color: #035755; font-size: 1rem;" class="mx-3 d-inline">Sobre
                     </h4>
                 </a>
 
@@ -66,7 +68,8 @@
                     </a>
                 </div>
             </div>
-            <img class="mt-3" src="./home-assets/hamburguer-icon.png" id="hamburguer" style="float: right; height: 50px;">
+            <img class="mt-3" src="./home-assets/hamburguer-icon.png" id="hamburguer"
+                style="float: right; height: 50px;">
             <script>
                 document.addEventListener('click', function (event) {
                     const isClickInsideHamburguer = document.getElementById('hamburguer').contains(event.target);
@@ -87,21 +90,94 @@
     </div>
 
     <div style="min-height: 80vh;">
-        <div class="mx-auto mb-5" style="margin-top: 200px; max-width: 1000px; width: 80%;">
-            <h3 class="text-center" style="color: #FA5652;">Saude 092</h3>
-            <h1 class="text-center font-weight-bold" style="color: #035755;">Sobre o projeto</h1>
+        <div class="mx-auto" style="margin-top: 200px; max-width: 1000px; width: 80%;">
+            <h3 class="text-center" style="color: #FA5652;">Covid-19</h3>
+            <h1 class="text-center font-weight-bold" style="color: #035755;">Notícias</h1>
+            <p class="text-center my-4" style="font-family: 'Acme', sans-serif; font-size: 1.1rem;">As melhores notícias
+                que
+                encontramos nesse momento.</p>
         </div>
 
-        <div class="mx-auto mb-5 shadow p-3 p-sm-5" style="line-height: 2rem; max-width: 1000px; width: 90%;">
-            <h2>Como surgiu?</h2>
-            <p class="text-justify" style="text-indent: 3ch;">
-                A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hack Saúde 2020 a partir da produção de
-                solução
-                para instrumentos de acesso a informação e postos de atendimento em saúde pública.
-            </p>
-
+        <div id="news-holder" class="mx-auto mb-5 shadow p-3 p-sm-5"
+            style="line-height: 2rem; max-width: 1000px; width: 90%;">
 
         </div>
+
+        <script>
+
+            function searchNews() {
+                fetch('http://newsapi.org/v2/top-headlines?country=br&q=covid&sortBy=publishedAt&apiKey=d369158bad6f4776ab9ccc955848285c')
+                    .then(response => response.json())
+                    .then(commits => commits.articles.map((element) => {
+                        const author = element.author;
+
+                        const URL = element.url;
+                        const imageURL = element.urlToImage;
+                        const titleText = element.title;
+                        const contentText = element.description;
+                        const dateText = element.publishedAt;
+
+                        const newHolderRef = document.createElement('a');
+                        newHolderRef.style = "text-decoration: none;";
+                        newHolderRef.href = URL;
+
+                        const newHolder = document.createElement('div');
+                        newHolder.style = "overflow: auto; border-radius: 10px;";
+                        newHolder.classList.add("p-3", "mx-auto", "border", "text-body", "my-3");
+                        newHolderRef.appendChild(newHolder);
+
+                        const imageHolder = document.createElement('div');
+                        imageHolder.className = "news-image ml-2 mb-2";
+                        newHolder.appendChild(imageHolder);
+
+                        const image = document.createElement('img');
+                        image.src = imageURL;
+                        imageHolder.appendChild(image);
+
+                        const title = document.createElement('h5');
+                        title.innerHTML = titleText;
+                        title.style = "text-decoration: initial;";
+                        newHolder.appendChild(title);
+
+                        const newInfo = document.createElement('h6');
+                        newInfo.classList.add("text-muted", "font-italic");
+                        newInfo.style = "font-size: 0.8rem; text-decoration: none!important;";
+                        newInfo.innerHTML = author + " • " + dateText.replace(/-/g, "/").replace("T", " - ").replace("Z", "").slice(0, -3);
+                        newHolder.appendChild(newInfo);
+
+                        const content = document.createElement('p');
+                        content.innerHTML = contentText;
+                        content.style = "text-decoration: none!important;";
+                        newHolder.appendChild(content);
+
+                        document.getElementById('news-holder').append(newHolderRef);
+                    }));
+            }
+            searchNews();
+        </script>
+
+        <style>
+            .news-container {
+                overflow: auto;
+                border-radius: 10px;
+            }
+
+            .news-image {
+                float: right;
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+
+            .news-image img {
+                display: block;
+                margin-left: -25%;
+                height: 100%;
+                transform: translateX(-10%);
+                width: auto;
+            }
+        </style>
 
         <!-- FOOTER -->
         <div class="w-100 px-5 py-3 pt-5" style="margin-top: 200px;">
