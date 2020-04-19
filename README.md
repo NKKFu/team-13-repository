@@ -6,8 +6,6 @@
 
 # Saude 092
 
-## Sobre
-
 A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hack Saúde 2020 a partir da produção de solução para instrumentos de acesso a informação e postos de atendimento em saúde pública.
 
 ## Funcionamento da Plataforma
@@ -29,6 +27,8 @@ Preview funcional: https://nkkfu.github.io/team-13-repository/front-end/
 A parte de atendimento ao cliente é um bate-papo desenvolvido com **Socket.IO** com o propósito do paciente receber instruções corretas por uma pessoa. 
 
 Preview funcional: https://nkkfu.github.io/team-13-repository/back-end/pages/admin.html
+
+Clique em "Entrar em uma sala", após isso um número de quarto será dado à você. Depois disso, espere alguém ser direcionado à você (através da parte de atendimento do front-end), o sistema faz isso automaticamente.
 
 ### Cadastro (back-end)
 
@@ -82,8 +82,6 @@ Corpo da mensagem (body) ->
 - Dependências : [CORS](https://www.npmjs.com/package/cors),  [dotenv](https://www.npmjs.com/package/dotenv),  [Express](https://expressjs.com/pt-br/),  [nodemailer](https://nodemailer.com/),  [Socket.IO](https://socket.io/)
 
 ## Repositórios adicionais (complementares)
-
-https://nodemailer.com/
 
 Saude092-chat -> https://github.com/NKKFu/saude092-chat
 > Utilizado para a comunicação entre o paciente e o atendente que irá passar as instruções corretas ao paciente. Está hospedada no Heroku. Não foi possível colocá-lo neste mesmo repositório pois seria possível o Heroku executar duas aplicações na mesma porta com propósitos diferentes, por isso o sistema Saude 092 está em duas aplicações Heroku.
