@@ -51,6 +51,7 @@ Query params -> <br>
 - Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.<br>
 Corpo da mensagem (body) ->
 
+```
     {
     	email: String,
     	name: String,
@@ -59,6 +60,7 @@ Corpo da mensagem (body) ->
     	marks: String,
     	contact: String,
     }
+```
 
 ### Criadores
 
