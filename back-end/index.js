@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.use(express.json())
 
 
+// REST API
 app.get(('/find/:lati/:long'), (req, res) => {
     res.send(ubsController.getClosestPoint(req.params.lati, req.params.long))
 });

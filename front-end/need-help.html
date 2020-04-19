@@ -13,6 +13,9 @@
 
     <script src="./scripts/ubs-list.js"></script>
     <script src="./scripts/need-help.js"></script>
+
+    <!-- Socket.io for communication between user and moderator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 </head>
 
 <body>
@@ -45,7 +48,7 @@
                 </div>
             </div>
             <div style="background-color: rgb(24, 163, 0);" class="rounded-bottom content pb-5">
-                <div class="pb-3" id="form0">
+                <div class="pb-3 d-none" id="form0">
                     <h2>Dados Pessoais</h2>
                     <form>
                         <div class="form-group">
@@ -63,52 +66,47 @@
                             <input type="number" class="form-control" id="exampleInputPassword1"
                                 placeholder="Insira sua idade">
                         </div>
-                        <button onclick="nextForm()" type="button"
-                            class="btn btn-primary float-right px-5">Próximo</button>
                     </form>
-                </div>
-                <div class="pb-3 d-none" id="form1">
-                    <h2>Sintomas</h2>
+                    <h2>Grupo de Risco</h2>
                     <form>
-                        <h5 class="m-0" for="inputPassword4">Como você está?</h5>
-                        <small class="mt-0 mb-0 form-text">
+                        <h5 class="m-0" for="inputPassword4">Informe para a gente se você se encaixa em um desses
+                            grupos.</h5>
+                        <small id="passwordHelpBlock" class="mt-0 mb-0 form-text">
                             Clique nos botões a seguir para especificar o tempo
                         </small>
                         <div class="container p-0">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-4">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="felling" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Bem</div>
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Idosos (tenho mais de 60
+                                            anos)</div>
                                     </label>
 
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="felling" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Razoável</div>
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Asmáticos</div>
                                     </label>
-
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
+                                <div class="col-4">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="felling" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Ruim</div>
-                                    </label>
-
-                                </div>
-                                <div class="col-6">
-                                    <label class="p-0 container">
-                                        <input class="mark-button" name="felling" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%">Péssimo</div>
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Diabéticos</div>
                                     </label>
                                 </div>
                             </div>
                         </div>
+                    </form>
 
-                        <h5 class="m-0" for="inputPassword4">Quais sintomas você está sentido?</h5>
+                    <button onclick="nextForm()" type="button" class="btn btn-primary float-right px-5">Próximo</button>
+                </div>
+                <div class="pb-3 d-none" id="form1">
+                    <h2>O que você está sentido?</h2>
+                    <form>
+
+                        <h5 class="m-0" for="inputPassword4">Informe os sintomas que você está sentindo no momento</h5>
                         <small id="passwordHelpBlock" class="mt-0 mb-0 form-text">
                             Clique nos botões a seguir para especificar seus sintomas.
                         </small>
@@ -117,14 +115,14 @@
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
                                         <input class="mark-button" type="checkbox">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Febre</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Coriza</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
                                         <input class="mark-button" type="checkbox">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Tosse</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Nariz entupido</div>
                                     </label>
 
                                 </div>
@@ -133,20 +131,69 @@
                                 <div class="col-6">
                                     <label class="p-0 container">
                                         <input class="mark-button" type="checkbox">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Falta de Ar</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Cansaço</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
                                         <input class="mark-button" type="checkbox">
-                                        <div class="p-3 rounded checkmark" style="width: 100%">Outros</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Tosse</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Dor de cabeça</div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Dores no corpo ou mal
+                                            estar</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Dor de garganta</div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Diarreia ou dores
+                                            abdominais</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Perda de olfato (não
+                                            sentir cheiro)</div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Perda do paladar (não
+                                            sentir gosto)</div>
                                     </label>
                                 </div>
                             </div>
                         </div>
 
-                        <h5 class="m-0" for="inputPassword4">A quanto tempo está sentindo?</h5>
+                        <h5 class="m-0" for="inputPassword4">Você está sentido febre?</h5>
                         <small id="passwordHelpBlock" class="mt-0 mb-0 form-text">
                             Clique nos botões a seguir para especificar o tempo
                         </small>
@@ -155,30 +202,80 @@
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
                                         <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Hoje</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Não, não estou sentido
+                                            febre
+                                        </div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
                                         <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">2 à 7 dias</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias.
+                                        </div>
                                     </label>
-
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-6">
-                                    <label class="p-0 container">
+                                    <label class="m-0 p-0 container">
                                         <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">7 à 14 dias</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias.
+                                        </div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
                                         <input class="mark-button" name="mark-timming" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%">Mais que 14 dias</div>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à mais de 4 dias
+                                            atrás.
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="m-0" for="inputPassword4">Você está sentido falta de ar?</h5>
+                        <small id="passwordHelpBlock" class="mt-0 mb-0 form-text">
+                            Clique nos botões a seguir para especificar o tempo
+                        </small>
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="m-0 p-0 container">
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Não, não estou sentido
+                                            falta de ar
+                                        </div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias.
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="m-0 p-0 container">
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias.
+                                        </div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark-timming" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à mais de 4 dias
+                                            atrás.
+                                        </div>
                                     </label>
                                 </div>
                             </div>
@@ -188,7 +285,7 @@
                         <button onclick="nextForm()" type="button" class="btn btn-primary float-right">Próximo</button>
                     </form>
                 </div>
-                <div class="pb-3 d-none" id="form2">
+                <div class="pb-3 " id="form2">
                     <div class="d-none">
                         <h2>Instruções</h2>
                         <h5>Identificamos que você não está em caso grave da COVID-19, as orientações da plataform é de
@@ -199,6 +296,45 @@
                     <div class="d-none">
                         <h2>Encaminhamento</h2>
                         <h5>Para podermos encaminhar você à uma unidade médica</h5>
+                    </div>
+                    <div>
+                        <h2>Fale com um de nossos atendentes</h2>
+                        <h6>Nossa inteligência artifical não conseguiu proceder corretamente. Vamos falar com você pelo
+                            bate-papo abaixo.</h6>
+
+                        <div id="chat-history" style="height: 400px; color: black; overflow:scroll;"
+                            class="p-3 bg-light rounded-top">
+                            <div class="p-3 rounded mb-3 shadow-sm" style="width: 80%; background-color: #fff">
+                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
+                                </h5>
+                            </div>
+                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
+                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
+                                </h5>
+                            </div>
+                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
+                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
+                                </h5>
+                            </div>
+                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
+                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
+                                </h5>
+                            </div>
+                            <div class="p-3 rounded my-3 shadow-sm" style="width: 80%; background-color: #fff">
+                                <h5>Olá, eu sou um funcionário do Ministério Público de Saúde, em que posso te ajudar?
+                                </h5>
+                            </div>
+                        </div>
+                        <script>
+                            const div = document.getElementById("chat-history");
+                            div.scrollTop = div.scrollHeight;
+                        </script>
+                        <div class="d-flex">
+                            <input class="form-control form-control-lg" style="height: 60px; border-radius: 0;" type="text"
+                                placeholder="Digite algo..">
+
+                            <button type="button" style="height: 60px; border-radius: 0;" class="px-5 py-3 btn btn-primary">ENVIAR</button>
+                        </div>
                     </div>
                 </div>
             </div>
