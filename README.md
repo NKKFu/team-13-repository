@@ -49,7 +49,8 @@ Query params -> <br>
 :long -> Int - Longitude
 
 - Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.<br>
-Corpo da mensagem (body) -> <br>
+Corpo da mensagem (body) ->
+
     {
     	email: String,
     	name: String,
