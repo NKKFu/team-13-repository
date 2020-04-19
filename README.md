@@ -51,13 +51,12 @@ Query params -> <br>
 - Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.<br>
 Corpo da mensagem (body) -> <br>
 {<br>
-    email: String,<br>
-    name: String,<br>
-    age: Int,<br>
-    isGroup: String,<br>
-    marks: String,<br>
-    contact: String,<br>
-    };<br>
+&#32;email: String,<br>
+&#32;name: String,<br>
+&#32;age: Int,<br>
+&#32;isGroup: String,<br>
+&#32;marks: String,<br>
+&#32;contact: String,<br>
 }
 
 ### Criadores
