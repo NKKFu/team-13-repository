@@ -295,10 +295,20 @@
                 <div class="pb-3 d-none" id="form2">
                     <div id="end1" class="d-none">
                         <h2>Instruções</h2>
-                        <h5>Identificamos que você não está em caso grave da COVID-19, as orientações da plataform é de
-                            isolamento social. <b>Caso seus sintomas aumentem de proporção, procure um médico ou faça
-                                uma nova
-                                consulta na Saude 092.</b></h5>
+                        <h5>Lave as mãos com água e sabão por pelo menos 20 segundos, com frequência. Quando não for
+                            possível, limpe e higienize suas mãos com álcool gel 70%; - Evite encostar as mãos não
+                            lavadas nos olhos, boca e nariz;
+                            - Quando tossir e espirrar, cubra a boca e o nariz com um lenço de papel descartável e
+                            jogue-o no lixo, ou proteja com o antebraço. Não use suas mãos, a fim de evitar transmitir o
+                            vírus para objetos e pessoas;
+                            - Evite locais muito cheios e com aglomeração de pessoas (shows, festas, shoppings etc);
+                            - Não compartilhe objetos de uso pessoal, como copos, talheres e pratos, e limpe objetos que
+                            sejam tocados com frequência, como celulares; - Evite contato próximo com pessoas que
+                            estejam com sintomas de resfriado ou gripe.
+                            - Se você tem mais de 60 anos ou já possui uma doença crônica, como diabetes, pressão
+                            arterial elevada, doença renal, cardíaca ou respiratória, está em tratamento oncológico ou
+                            com medicamentos que afetem a imunidade, fique ainda mais atento aos sintomas e procure seu
+                            médico se apresentar sinais de descompensação!/h5>
                     </div>
                     <div id="end2" class="d-none">
                         <h2>Encaminhamento</h2>
@@ -466,18 +476,19 @@
                     formCounter++;
                 }
 
-                const currentCase = 1;
-                switch (currentCase) {
-                    case 1:
-                        sendEmail(name, age, groupRisk, marks, number);
-                        break;
-                }
-
                 if (formCounter == 2) {
                     console.log('End of form');
 
-                    // Form acabou, enviar resultado
-                    ConnectToServer();
+
+                    const currentCase = 1;
+                    switch (currentCase) {
+                        case 1:
+                            sendEmail(name, age, groupRisk, marks, number);
+                            break;
+                        case 2:
+                            ConnectToServer();
+                            break;
+                    }
                     document.getElementById('end3').classList.remove('d-none');
                 }
             }
@@ -488,7 +499,6 @@
                 Http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
                 Http.send(JSON.stringify({
                     name,
-                    email: 'ubs-2914@maildrop.cc',
                     age,
                     isGroup: group,
                     marks,

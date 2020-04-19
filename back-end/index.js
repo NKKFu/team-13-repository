@@ -33,9 +33,9 @@ app.post(('/patient/new'), (req, res) => {
 
     const mailOptions = {
         from: 'saude092server@gmail.com',
-        to: req.body.email,
+        to: 'ubs-2914@maildrop.cc',
         subject: 'PACIENTE SAUDE 092',
-        text: "Novo paciente registrado no sistema SAUDE 092, dados:" + "\n \nNome: " + req.body.name + "\nIdade: " + req.body.age + "\nEstá em grupo de risco: " + req.body.isGroup + "\nSintomas: " + req.body.marks + 'Contato: ' + req.body.contact,
+        text: "Novo paciente registrado no sistema SAUDE 092, dados:" + "\n \nNome: " + req.body.name + "\nIdade: " + req.body.age + "\nEstá em grupo de risco: " + req.body.isGroup + "\nSintomas: " + req.body.marks + '\nContato: ' + req.body.contact,
     };
 
     transporter.sendMail(mailOptions, function (error, info) {

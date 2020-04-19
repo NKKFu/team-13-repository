@@ -6,26 +6,59 @@
 
 # Saude 092
 
-
 ### Sobre
 
 A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hack Saúde 2020 a partir da produção de solução para instrumentos de acesso a informação e postos de atendimento em saúde pública.
 
-### Preview do Sistema
+### Funcionamento da Plataforma
 
-> A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo hospedada na plataforma Github Pages.
+#### Cliente
 
-Disponível em https://nkkfu.github.io/team-13-repository/front-end/
+A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo hospedada na plataforma Github Pages. A parte de [atendimento](#Atendimento) é um formulário onde um paciente com suspeita de Covid-19 responde perguntas do tipo "Você está com falta de ar?" e o próprio sistema passa instruções ao paciente, sendo três casos possíveis:
+
+- Caso 1 (Sem COVID-19) -> O paciente recebe instruções de tomar precauções de higiene e permanecer em sua casa.
+
+- Caso 2 (Suspeita de COVID-19) -> Uma bate-papo (chat) é aberto no próprio navegador para o paciente conversar com um atendente que passará novas instruções
+
+- Caso 3 (Sintomas graves de COVID-19) -> O sistema manda um email à central e mostra à pessoa qual é a unidade médica mais próxima dela de acordo com a resposta de seu geolocalizador (GPS)
+
+Preview funcional: https://nkkfu.github.io/team-13-repository/front-end/
+
+#### Atendimento
+
+A parte de atendimento ao cliente é um bate-papo desenvolvido com **Socket.IO** com o propósito do paciente receber instruções corretas por uma pessoa. 
+Preview funcional: https://nkkfu.github.io/team-13-repository/back-end/pages/admin.html
+
+#### Cadastro
+
+Todo paciente cadastrado pela Saude 092 será catalogado no email da unidade à ser encaminhado, porém como o projeto ainda não está em sua forma de produção a visualização de todos e-mails está disponível abertamente à qualquer um em: https://maildrop.cc/inbox/ubs-2914
 
 ### Rodando back-end
 
 > Todo o sistema backend da plataforma está sendo executado dentro da plataforma Heroku em sua versão gratuita
 
-Com o NodeJS instalado utilize o comando
+Com o NodeJS e as dependências do projeto instaladas, utilize o comando
 
-		node /back-end/index.js
+`$ node /back-end/index.js`
 
-na **pasta raiz** do projeto para rodar a API que criamos.
+na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
+
+- Rota *POST* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.
+Query params -> 
+:lati -> Int - Latitude
+:long -> Int - Longitude
+
+- Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.
+Corpo da mensagem (body) -> 
+{
+    email: String,
+    name: String,
+    age: Int,
+    isGroup: String,
+    marks: String,
+    contact: String,
+    };
+}
 
 ### Criadores
 
