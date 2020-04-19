@@ -18,7 +18,7 @@ A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo 
 
 - Caso 2 (Suspeita de COVID-19) -> Uma bate-papo (chat) é aberto no próprio navegador para o paciente conversar com um atendente que passará novas instruções
 
-- Caso 3 (Sintomas graves de COVID-19) -> O sistema manda um email à central e mostra à pessoa qual é a unidade médica mais próxima dela de acordo com a resposta de seu geolocalizador (GPS)
+- Caso 3 (Sintomas graves de COVID-19) -> O sistema manda um email à central e mostra à pessoa qual é a unidade médica mais próxima dela de acordo com a resposta de seu geolocalizador (GPS) e o banco de unidades da plataforma, disponível em: https://github.com/NKKFu/team-13-repository/blob/master/back-end/ubs-list.js
 
 Preview funcional: https://nkkfu.github.io/team-13-repository/front-end/
 
@@ -49,7 +49,7 @@ Com o NodeJS e as dependências do projeto instaladas, utilize o comando
 
 na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
 
-- Rota *POST* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.<br>
+- Rota *GET* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.<br>
 Query params -> <br>
 :lati -> Int - Latitude<br>
 :long -> Int - Longitude
