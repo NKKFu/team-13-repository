@@ -106,7 +106,7 @@
         <script>
 
             function searchNews() {
-                fetch('http://newsapi.org/v2/top-headlines?country=br&q=covid&sortBy=publishedAt&apiKey=d369158bad6f4776ab9ccc955848285c')
+                fetch('https://newsapi.org/v2/top-headlines?country=br&q=covid&sortBy=publishedAt&apiKey=d369158bad6f4776ab9ccc955848285c')
                     .then(response => response.json())
                     .then(commits => commits.articles.map((element) => {
                         const author = element.author;
