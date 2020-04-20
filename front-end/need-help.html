@@ -489,8 +489,10 @@
                                     <p class="card-text text-dark">Utilizamos sua localização aproximada, portanto a
                                         unidade
                                         médica mais próxima
-                                        de você pode não ser esta. <br><b>Número de vagas: 204</b></p>
-                                    <a id="UBS-maps" href="#" class="card-link">Abrir no Google Maps</a>
+                                        de você pode não ser esta. <br>
+                                        <b id='people'>Tempo médio de espera: 30 min</b><br>
+                                        <b id='pass'>Senha gerada: 204</b> </p>
+                                    <a id="UBS-maps" href="#" class="card-link">Abrir local no Google Maps</a>
                                 </div>
                             </div>
                         </div>
@@ -617,6 +619,7 @@
                         findUBS();
                         sendEmail(name, age, groupRisk, marks, number);
                         document.getElementById('end3').classList.remove('d-none');
+                        document.getElementById('pass').innerHTML = 'Senha gerada: ' + new Date().getUTCMilliseconds();
                     }
                 }
             }
@@ -657,22 +660,6 @@
                 color: white;
             }
         </style>
-
-        <div id="risk-group-info" class="d-none">
-            <div class="card-body">
-                <h3 id="" class="text-center text-danger card-title">Você faz parte do grupo de risco</h3>
-                <h6 id="" class="card-subtitle mb-2 text-muted">Portanto seu código de cadastro é gerado imediatamente:
-                    23874218374982
-                </h6>
-                <h4 class="card-text">Instruções de atendimento:<br>
-                    <h6>
-                        <b>- NÃO ATUALIZE ESTA PÁGINA</b><br>
-                        <b>- Fique atento ao seu celular, mandaremos uma mensagem por lá.</b><br>
-                        <b>- Espere surgir uma nova instrução.</b>
-                    </h6>
-                </h4>
-            </div>
-        </div>
     </div>
 
     <style>
