@@ -12,6 +12,7 @@
     <div style="width: 90%; max-width: 1000px;" class="mx-auto">
         <h3 id="status">Status: </h3>
         <button onclick="ConnectToServer('admin')">ENTRAR EM UMA SALA</button>
+        <button onclick="Cancel()">CANCELAR CHAT E ENVIAR FORMULÁRIO</button>
         <br />
 
         <div id="chat-history" style="height: 400px; color: black; overflow:scroll;"
@@ -63,6 +64,11 @@
                     const div = document.getElementById("chat-history");
                     div.scrollTop = div.scrollHeight;
                 });
+            }
+
+            function cancel() {
+                if (!socket)
+                    socket.emit('CancelToServer', roomID);
             }
 
             function sendMessage() {

@@ -421,6 +421,22 @@
                                     roomID = data;
                                 });
 
+                                socket.on('cancel', () => {
+                                    document.getElementById('end2').classList.add('d-none');
+
+                                    findUBS();
+                                    const id = new Date().valueOf();
+                                    sendEmail(name, age, groupRisk, marks, number, id);
+                                    document.getElementById('end3').classList.remove('d-none');
+                                    document.getElementById('pass').innerHTML = 'Protocolo gerado: ' + id;
+
+                                    const time = new Date().getTime() + 30 * 60000;
+                                    const hours = new Date(time).getHours();
+                                    const minutes = new Date(time).getMinutes();
+
+                                    document.getElementById('timming').innerHTML = 'Previsão de chegada na unidade: ' + hours + ":" + ('0' + minutes).slice(-2) + "h ";
+                                });
+
                                 socket.on('message', function (author, msg) {
                                     if (msg.length < 1)
                                         return;
@@ -626,6 +642,7 @@
                         document.getElementById('end2').classList.remove('d-none');
                         // Atendimento
                         ConnectToServer();
+
                     } else {
                         // Agendamento
                         findUBS();
