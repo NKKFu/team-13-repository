@@ -56,15 +56,11 @@ As aquisições de email levam um certo tempo nesta plataforma (Mail Drop).
 
 > Todo o sistema backend da plataforma está sendo executado dentro da plataforma Heroku em sua versão gratuita, por isso deve levar alguns segundos até a aplicação retornar uma resposta ao usuário.
 
-Com o NodeJS e as dependências do projeto instaladas, utilize o comando
+Com o NodeJS e as dependências do projeto instaladas, utilize o comando `$ node /back-end/index.js` ou use o projeto "deployado" `https://saude-092.herokuapp.com/` na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
 
-`$ node /back-end/index.js`
+> Caso você opte em utilizar o ambiente local, a URL principal será: `localhost:3000` 
 
-na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
-
-`localhost:3000` ou acesse utilizando `https://saude-092.herokuapp.com/`
-
-- Rota *GET* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.<br>
+- Rota *GET* `/find/:lati/:long` -> Procura uma unidade médica próxima às coordenadas enviadas.<br>
 
 |  | **Query params** |  |
 | :------------: | :------------: | :------------: |
@@ -74,7 +70,7 @@ na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
 
 Exemplo: https://saude-092.herokuapp.com/find/-3.046678/-59.965992
 
-- Rota *GET* `/get-ubs/:id` -> Procura pela unidade médica utilizar o ID da mesma.<br>
+- Rota *GET* `/get-ubs/:id` -> Procura por uma unidade médica usando o ID da mesma.<br>
 
 |  | **Query params** |  |
 | :------------: | :------------: | :------------: |
@@ -83,8 +79,8 @@ Exemplo: https://saude-092.herokuapp.com/find/-3.046678/-59.965992
 
 Exemplo: https://saude-092.herokuapp.com/get-ubs/2
 
-- Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.<br>
-Corpo da mensagem (body) ->
+- Rota *POST* `/patient/new` -> Envia um email à central com dados de um paciente.<br>
+Corpo da mensagem (body):
 
 ```
     {
@@ -97,7 +93,7 @@ Corpo da mensagem (body) ->
     }
 ```
 
-> Não é possível utilizar uma URL limpa para requisições com um body, será necessário utilizar um programa de rotas, similar ao Insomnia.
+> Não é possível utilizar o exemplo uma URL limpa para requisições POST com um body, será necessário utilizar um programa de rotas, similar ao Insomnia.
 
 ## Criadores 🤩
 
@@ -106,7 +102,7 @@ Corpo da mensagem (body) ->
 | ![](https://i.ibb.co/LhVkGjS/Whats-App-Image-2020-04-12-at-11-30-29.jpg)   | ![](https://i.ibb.co/2gMgm7j/Whats-App-Image-2020-04-12-at-11-58-11.jpg)  | ![](https://i.ibb.co/KNHDWhH/karla.png) |
 | Desenvolvedor | Biotecnólogo | Negócios |
 
-## Tecnologias envolvidas 🚀
+## Tecnologias utilizadas 🚀
 
 - Back-end : [NodeJS](https://nodejs.org/), [Socket.IO](https://socket.io/), [Heroku](https://www.heroku.com/), [Github Pages](https://pages.github.com/), [nodemailer](https://nodemailer.com/), [Express](https://expressjs.com/pt-br/), API REST, [Saude092-chat](https://github.com/NKKFu/saude092-chat)
 - Front-end : HTML5, CSS, JavaScript, [Bootstrap 4](https://getbootstrap.com/)
@@ -115,4 +111,4 @@ Corpo da mensagem (body) ->
 ## Repositórios adicionais (complementares) 📂
 
 Saude092-chat -> https://github.com/NKKFu/saude092-chat
-> Utilizado para a comunicação entre o paciente e o atendente que irá passar as instruções corretas ao paciente. Está hospedada no Heroku. Não foi possível colocá-lo neste mesmo repositório pois seria possível o Heroku executar duas aplicações na mesma porta com propósitos diferentes, por isso o sistema Saude 092 está em duas aplicações Heroku.
+> Utilizado para a comunicação entre o paciente e o atendente que irá passar as instruções corretas ao paciente o sistema Saude092-chat está hospedada no Heroku já que não foi possível colocá-lo neste mesmo repositório pois seria impossível o NodeJS executar duas aplicações na mesma porta com propósitos diferentes (API REST e Socket.IO), por isso o sistema Saude 092 está distribuido em duas aplicações Heroku.
