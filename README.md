@@ -45,7 +45,7 @@ Clique em "Entrar em uma sala", após isso um número de quarto será dado à vo
 ### Cadastro (back-end) 📝
 
 Todo paciente cadastrado pela Saude 092 será catalogado no email da unidade à ser encaminhado, porém como o projeto ainda não está em sua forma de produção portanto a visualização de todos e-mails está disponível abertamente à qualquer um em: https://maildrop.cc/inbox/ubs-2914
-As aquisições de email levam um certo tempo nesta plataforma (Mail Drop).
+As aquisições de email levam um certo tempo nesta plataforma (Mail Drop). Em ambiente de produção o email contendo dados do paciente será enviado para a instituição responsável (a unidade médica)
 
 
 ## Executando front-end 💻
