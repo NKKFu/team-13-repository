@@ -37,7 +37,6 @@
                     socket.emit('JoinRoom', key);
                 });
 
-
                 socket.on('connectToRoom', function (data) {
                     document.getElementById('status').innerHTML = "Status: você está em uma sala, N° " + data;
                     roomID = data;
