@@ -48,4 +48,24 @@ app.post(('/patient/new'), (req, res) => {
     });
 });
 
+app.get(('/get-ubs/:id'), (req, res) => {
+    const objectList = require('./ubs-list.js').JSONlist.listOfUbs;;
+    for (var i = 0; i < objectList.length; i++) {
+        if (objectList[i].id == req.params.id) {
+            res.send(objectList[i]);
+            return;
+        }
+    }
+    res.send('');
+
+    // const fs = require('fs');
+    // if (fs.existsSync('./database/' + key + '.txt')) {
+    //     fs.readFile('./database/' + key + '.txt', 'utf8', function (err, data) {
+    //         if (err) throw err;
+    //         res.send(data);
+    //     });
+    // }
+
+});
+
 app.listen(process.env.PORT || 3000);
