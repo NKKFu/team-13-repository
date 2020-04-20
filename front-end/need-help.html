@@ -617,9 +617,10 @@
                     } else {
                         // Agendamento
                         findUBS();
-                        sendEmail(name, age, groupRisk, marks, number);
+                        const id = new Date().valueOf();
+                        sendEmail(name, age, groupRisk, marks, number, id);
                         document.getElementById('end3').classList.remove('d-none');
-                        document.getElementById('pass').innerHTML = 'Senha gerada: ' + new Date().valueOf();
+                        document.getElementById('pass').innerHTML = 'Senha gerada: ' + id;
                     }
                 }
             }
@@ -641,25 +642,6 @@
                 }
             }
         </script>
-
-        <style>
-            .step-by-step {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .content {
-                padding: 3vh;
-            }
-
-            .title-active {
-                background-color: rgb(24, 163, 0);
-            }
-
-            .form-title {
-                color: white;
-            }
-        </style>
     </div>
 
     <style>
@@ -756,6 +738,24 @@
         .container .mark-button~.checkmark {
             background-color: rgb(228, 243, 255);
             color: rgb(12, 90, 114);
+        }
+
+
+        .step-by-step {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            padding: 3vh;
+        }
+
+        .title-active {
+            background-color: rgb(24, 163, 0);
+        }
+
+        .form-title {
+            color: white;
         }
     </style>
 

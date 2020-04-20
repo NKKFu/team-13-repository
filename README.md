@@ -8,6 +8,13 @@
 
 A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hackfest Saúde 2020 a partir da produção de solução para instrumentos de acesso a informação e postos de atendimento em saúde pública.
 
+> Features legais da plataforma:😎
+- Possui fontes de informações confiáveis como a SUSAM
+- Design amigável e responsivo
+- Seção de notícias sobre a COVID-19
+- Animações na trasição de telas
+- Tempo 
+
 ## Funcionamento da Plataforma
 
 ### Cliente (front-end)
