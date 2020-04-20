@@ -387,8 +387,8 @@
                     </div>
                     <div id="end2" class="d-none">
                         <h2>Fale com um de nossos atendentes</h2>
-                        <h6>Nossa inteligência artifical não conseguiu proceder corretamente. Vamos falar com você pelo
-                            bate-papo abaixo. (Espere algum atendente entrar em contato com você)</h6>
+                        <h6>Vamos falar com você pelo bate-papo abaixo. (Espere algum atendente entrar em contato com
+                            você)</h6>
 
                         <div id="chat-history" style="height: 400px; color: black; overflow:scroll;"
                             class="p-3 bg-light rounded-top">
@@ -501,8 +501,8 @@
                                         unidade
                                         médica mais próxima
                                         de você pode não ser esta. <br>
-                                        <b id='people'>Tempo médio de espera: 30 min</b><br>
-                                        <b id='pass'>Senha gerada: 204</b> </p>
+                                        <b id='timming'>Previsão de chegada na unidade: 30 min</b><br>
+                                        <b id='pass'>Protocolo gerado: 204</b> </p>
                                     <a id="UBS-maps" href="#" class="card-link">Abrir local no Google Maps</a>
                                 </div>
                             </div>
@@ -631,7 +631,13 @@
                         const id = new Date().valueOf();
                         sendEmail(name, age, groupRisk, marks, number, id);
                         document.getElementById('end3').classList.remove('d-none');
-                        document.getElementById('pass').innerHTML = 'Senha gerada: ' + id;
+                        document.getElementById('pass').innerHTML = 'Protocolo gerado: ' + id;
+
+                        const time = new Date().getTime() + 30 * 60000;
+                        const hours = new Date(time).getHours();
+                        const minutes = new Date(time).getMinutes();
+
+                        document.getElementById('timming').innerHTML = 'Previsão de chegada na unidade: ' + hours + ":" + ('0' + minutes).slice(-2) + "h ";
                     }
                 }
             }
