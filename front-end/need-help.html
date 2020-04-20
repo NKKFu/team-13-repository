@@ -110,6 +110,20 @@
                                         <div class="p-3 rounded checkmark" style="width: 100%;">Hipertensos</div>
                                     </label>
                                 </div>
+                                <div class="col-4">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="group" value="Grávida" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Grávida</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label class="m-0 p-0 container">
+                                        <input class="mark-button" name="group" value="Puérpera" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Puérpera</div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -207,9 +221,59 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark" value="Cansaço" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Cansaço</div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark" value="Vômito" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Vômito</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark" value="Convulsão" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Convulsão</div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark" value="Falta de ar" type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Falta de ar
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark" value="Dificuldade para respirar"
+                                            type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Dificuldade para
+                                            respirar</div>
+                                    </label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label class="p-0 container">
+                                        <input class="mark-button" name="mark" value="Dedos azulados e pálidos"
+                                            type="checkbox">
+                                        <div class="p-3 rounded checkmark" style="width: 100%">Dedos azulados e pálidos
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
 
-                        <h5 class="m-0" for="inputPassword4">Você está sentido febre?</h5>
+                        <h5 class="mt-3" for="inputPassword4">Você está sentido febre?</h5>
                         <small id="passwordHelpBlock" class="mt-0 mb-0 form-text">
                             Clique nos botões a seguir para especificar o tempo
                         </small>
@@ -217,91 +281,72 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="fever" value="Não, não estou sentido febre"
-                                            type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Não, não estou sentido
-                                            febre
-                                        </div>
+                                        <input onclick="valueChanged()" class="mark-button" name="have-fever"
+                                            value="Não" type="radio" checked>
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Não</div>
                                     </label>
 
                                 </div>
                                 <div class="col-6">
                                     <label class="p-0 container">
-                                        <input class="mark-button" name="fever" value="Sim, à 2 dias" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="fever" value="Sim, entre 2 à 4 dias"
-                                            type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias
-                                        </div>
-                                    </label>
-
-                                </div>
-                                <div class="col-6">
-                                    <label class="p-0 container">
-                                        <input class="mark-button" name="fever" value="Sim, à mais de 4 dias"
-                                            type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à mais de 4 dias
-                                            atrás.
+                                        <input onclick="valueChanged()" id='have-fever' class="mark-button"
+                                            name="have-fever" value="Sim" type="radio">
+                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim
                                         </div>
                                     </label>
                                 </div>
                             </div>
                         </div>
-
-                        <h5 class="m-0" for="inputPassword4">Você está sentido falta de ar?</h5>
-                        <small id="passwordHelpBlock" class="mt-0 mb-0 form-text">
-                            Clique nos botões a seguir para especificar o tempo
-                        </small>
-                        <div class="container p-0">
-                            <div class="row">
-                                <div class="col-6">
-                                    <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="air" value="Não, não estou sentido falta de ar"
-                                            type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Não, não estou sentido
-                                            falta de ar
-                                        </div>
-                                    </label>
-
-                                </div>
-                                <div class="col-6">
-                                    <label class="p-0 container">
-                                        <input class="mark-button" name="air" value="Sim, à 2 dias" type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à 2 dias
-                                        </div>
-                                    </label>
+                        <div class="d-none" id="showOnlyWhenHaveFeber">
+                            <h5 class="mt-3">À quantos dias?</h5>
+                            <div class="container p-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="m-0 p-0 container">
+                                            <input class="mark-button" name="fever-time" value="2 dias ou menos"
+                                                type="radio">
+                                            <div class="p-3 rounded checkmark" style="width: 100%;">2 dias ou menos
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="p-0 container">
+                                            <input class="mark-button" name="fever-time" value="A partir de 2 dias"
+                                                type="radio">
+                                            <div class="p-3 rounded checkmark" style="width: 100%;">A partir de 2 dias
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <label class="m-0 p-0 container">
-                                        <input class="mark-button" name="air" value="Sim, entre 2 à 4 dias"
-                                            type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, entre 2 à 4 dias
-                                        </div>
-                                    </label>
-
-                                </div>
-                                <div class="col-6">
-                                    <label class="p-0 container">
-                                        <input class="mark-button" name="air" value="Sim, à mais de 4 dias"
-                                            type="radio">
-                                        <div class="p-3 rounded checkmark" style="width: 100%;">Sim, à mais de 4 dias
-                                            atrás.
-                                        </div>
-                                    </label>
+                            <h5 class="mt-3">Qual a temperatura?</h5>
+                            <div class="container p-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="m-0 p-0 container">
+                                            <input class="mark-button" name="fever-temperature"
+                                                value="Menos que 39 graus" type="radio">
+                                            <div class="p-3 rounded checkmark" style="width: 100%;">Menos que 39 graus
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="p-0 container">
+                                            <input class="mark-button" name="fever-temperature"
+                                                value="A partir de 39 graus" type="radio">
+                                            <div class="p-3 rounded checkmark" style="width: 100%;">A partir de 39 graus
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <script>
+                            function valueChanged() {
+                                document.getElementById('showOnlyWhenHaveFeber').className = document.getElementById('have-fever').checked ? '' : 'd-none';
+                            }
+                        </script>
 
                         <button onclick="backForm()" type="button" class="btn btn-danger float-left">Voltar</button>
                         <button onclick="nextForm()" type="button" class="btn btn-primary float-right">Próximo</button>
@@ -310,26 +355,26 @@
                 <div class="pb-3 d-none" id="form2">
                     <div id="end1" class="d-none">
                         <h2>Instruções</h2>
-                        <h5>Lave as mãos com água e sabão por pelo menos 20 segundos, com frequência. Quando não for
-                            possível, limpe e higienize suas mãos com álcool gel 70%; - Evite encostar as mãos não
-                            lavadas nos olhos, boca e nariz;
+                        <h5>Não identificamos suspeita de Corona Vírus em você, mas continue com estas
+                            preucauções:<br><br>
+                            Lave as mãos com água e sabão por pelo menos 20 segundos, com frequência. Quando não for
+                            possível, limpe e higienize suas mãos com álcool gel 70%. <br>
+                            - Evite encostar as mãos não lavadas nos olhos, boca e nariz;<br>
                             - Quando tossir e espirrar, cubra a boca e o nariz com um lenço de papel descartável e
                             jogue-o no lixo, ou proteja com o antebraço. Não use suas mãos, a fim de evitar transmitir o
-                            vírus para objetos e pessoas;
-                            - Evite locais muito cheios e com aglomeração de pessoas (shows, festas, shoppings etc);
+                            vírus para objetos e pessoas; <br>
+                            - Evite locais muito cheios e com aglomeração de pessoas (shows, festas, shoppings etc);<br>
                             - Não compartilhe objetos de uso pessoal, como copos, talheres e pratos, e limpe objetos que
-                            sejam tocados com frequência, como celulares; - Evite contato próximo com pessoas que
-                            estejam com sintomas de resfriado ou gripe.
-                            - Se você tem mais de 60 anos ou já possui uma doença crônica, como diabetes, pressão
-                            arterial elevada, doença renal, cardíaca ou respiratória, está em tratamento oncológico ou
-                            com medicamentos que afetem a imunidade, fique ainda mais atento aos sintomas e procure seu
-                            médico se apresentar sinais de descompensação!/h5>
+                            sejam tocados com frequência, como celulares; <br>
+                            - Evite contato próximo com pessoas que estejam com sintomas de resfriado ou gripe. <br><br>
+                            <b>Se você tem mais de 60 anos ou já possui uma doença crônica, como diabetes, pressão
+                                arterial elevada, doença renal, cardíaca ou respiratória, está em tratamento oncológico
+                                ou
+                                com medicamentos que afetem a imunidade, fique ainda mais atento aos sintomas e procure
+                                seu
+                                médico se apresentar sinais de descompensação!</b></h5>
                     </div>
                     <div id="end2" class="d-none">
-                        <h2>Encaminhamento</h2>
-                        <h5>Para podermos encaminhar você à uma unidade médica</h5>
-                    </div>
-                    <div id="end3" class="d-none">
                         <h2>Fale com um de nossos atendentes</h2>
                         <h6>Nossa inteligência artifical não conseguiu proceder corretamente. Vamos falar com você pelo
                             bate-papo abaixo. (Espere algum atendente entrar em contato com você)</h6>
@@ -360,7 +405,7 @@
 
                                 socket.on('connectToRoom', function (data) {
                                     console.log('My room ID is ' + data);
-                                    alert('Você está na sala ' + roomID)
+                                    alert('Atendente encontrado');
                                     roomID = data;
                                 });
 
@@ -424,6 +469,32 @@
                                 class="px-5 py-3 btn btn-primary">ENVIAR</button>
                         </div>
                     </div>
+                    <div id="end3" class="d-none">
+                        <h2>Encaminhamento</h2>
+                        <h5>Para podermos encaminhar você à uma unidade médica precisamos que você habilite seu GPS
+                            (verifique o canto superior esquerdo da sua tela).</h5>
+
+                        <div id="register-info" style="animation-name: fadeIn; animation-duration: 2s;"
+                            class="mt-5 d-none">
+                            <h5 class="text-sucess text-center">
+                                Seu cadastro foi realizado com sucesso! A unidade de saúde com menor pico de atendimento
+                                que está mais
+                                próxima a você é:
+                            </h5>
+
+                            <div id="UBS-card" class=" card w-100">
+                                <div class="card-body">
+                                    <h5 id="UBS-name" class="text-dark card-title">Nome da UBS</h5>
+                                    <h6 id="UBS-street" class="card-subtitle mb-2 text-muted">Rua da UBS</h6>
+                                    <p class="card-text text-dark">Utilizamos sua localização aproximada, portanto a unidade
+                                        médica mais próxima
+                                        de você pode não ser esta. <br><b>Número de vagas: 204</b></p>
+                                    <a id="UBS-maps" href="#" class="card-link">Abrir no Google Maps</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -453,13 +524,6 @@
                 const number = document.getElementById('number-input').value;
                 const age = document.getElementById('age-input').value;
 
-                const groupRiskInput = Array.prototype.slice.call(document.getElementsByName('group')).filter(value => {
-                    return value.checked;
-                }).map(element => {
-                    return element = element.value;
-                });
-                const groupRisk = groupRiskInput;
-
                 const marksInput = Array.prototype.slice.call(document.getElementsByName('mark')).filter(value => {
                     return value.checked;
                 }).map(element => {
@@ -467,23 +531,33 @@
                 });
                 const marks = marksInput;
 
-                const feverInput = document.querySelector("input[name=fever]:checked");
+                const feverInput = document.querySelector("input[name=have-fever]:checked");
                 const fever = feverInput ? feverInput.value : "";
 
-                const airInput = document.querySelector("input[name=air]:checked");
-                const air = airInput ? airInput.value : "";
+                const feverTimeInput = document.querySelector("input[name=fever-time]:checked");
+                const feverTime = feverTimeInput ? feverTimeInput.value : "";
+
+                const feverTemperatureInput = document.querySelector("input[name=fever-temperature]:checked");
+                const feverTemperature = feverTemperatureInput ? feverTemperatureInput.value : "";
+
+                const groupRisk = document.querySelector("input[name=group]:checked") != null;
 
                 switch (formCounter) {
                     case 0:
                         if (name === '' || number === '' || age === '') {
-                            alert('Preencha todos os campos obrigatórios');
+                            alert('Por favor, preencha todos os campos obrigatórios');
                             return;
                         }
 
                         console.log(name, number, age, groupRisk);
                         break;
                     case 1:
-                        console.log(marks, fever, air);
+                        if (marks === '') {
+                            alert('Por favor, preencha todos os campos obrigatórios');
+                            return;
+                        }
+
+                        console.log(marks, marks);
                         break;
                 }
 
@@ -503,16 +577,48 @@
                 }
 
                 if (formCounter == 2) {
-                    const currentCase = 1;
-                    switch (currentCase) {
-                        case 1:
-                            sendEmail(name, age, groupRisk, marks, number);
-                            break;
-                        case 2:
-                            ConnectToServer();
-                            break;
+                    /* Check cases */
+
+                    const marks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                    marks[0] = +marksInput.includes('Coriza');
+                    marks[1] = +marksInput.includes('Nariz entupido');
+                    marks[2] = +marksInput.includes('Cansaço');
+                    marks[3] = 2 * +marksInput.includes('Tosse');
+                    marks[4] = +marksInput.includes('Dor de cabeça');
+                    marks[5] = +marksInput.includes('Dores no corpo ou mal estar');
+                    marks[6] = +marksInput.includes('Dor de garganta');
+                    marks[7] = +marksInput.includes('Diarreia ou dores abdominais');
+                    marks[8] = +marksInput.includes('Perda de olfato');
+                    marks[9] = +marksInput.includes('Perda do paladar');
+                    marks[10] = +marksInput.includes('Cansaço');
+                    marks[11] = +marksInput.includes('Vômito');
+                    marks[12] = +marksInput.includes('Convulsão');
+                    marks[13] = 3 * +marksInput.includes('Falta de ar');
+                    marks[14] = 3 * +marksInput.includes('Dificuldade para respirar');
+                    marks[15] = +marksInput.includes('Dedos azulados e pálidos');
+                    marks[16] = 2 * +fever.includes('Sim');
+                    marks[17] = +feverTime.includes('A partir de 2 dias');
+                    marks[18] = +feverTemperature.includes('A partir de 39 graus');
+                    marks[19] = 3 * +groupRisk;
+
+                    let points = 0;
+                    for (let i = 0; i < marks.length; i++) {
+                        points += marks[i];
                     }
-                    document.getElementById('end3').classList.remove('d-none');
+
+                    if (6 >= points) {
+                        document.getElementById('end1').classList.remove('d-none');
+                        // Recomendação
+                    } else if (points <= 10) {
+                        document.getElementById('end2').classList.remove('d-none');
+                        // Atendimento
+                        ConnectToServer();
+                    } else {
+                        // Agendamento
+                        findUBS();
+                        sendEmail(name, age, groupRisk, marks, number);
+                        document.getElementById('end3').classList.remove('d-none');
+                    }
                 }
             }
 
@@ -552,25 +658,6 @@
                 color: white;
             }
         </style>
-
-        <div id="register-info" style="animation-name: fadeIn; animation-duration: 2s;" class="d-none">
-
-            <h5 class="text-sucess text-center">
-                Seu cadastro foi realizado com sucesso! A unidade de saúde com menor pico de atendimento que está mais
-                próxima a você é:
-            </h5>
-
-            <div id="UBS-card" class=" card w-100">
-                <div class="card-body">
-                    <h5 id="UBS-name" class="card-title">Nome da UBS</h5>
-                    <h6 id="UBS-street" class="card-subtitle mb-2 text-muted">Rua da UBS</h6>
-                    <p class="card-text">Utilizamos sua localização aproximada, portanto a unidade médica mais próxima
-                        de você pode não ser esta. <br><b>Número de vagas: 204</b><br><b>Tempo médio de atendimento: 23m
-                            0s</b></p>
-                    <a id="UBS-maps" href="#" class="card-link">Abrir no Google Maps</a>
-                </div>
-            </div>
-        </div>
 
         <div id="risk-group-info" class="d-none">
             <div class="card-body">
