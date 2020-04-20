@@ -58,8 +58,19 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Telefone*</label>
-                            <input type="text" class="form-control" id="number-input"
-                                placeholder="Insira seu número de telefone">
+                            <input id="number-input" oninput="tel()" class="form-control" placeholder="(92) 99999-9999"
+                                type="text" />
+                            <script>
+                                function tel() {
+
+                                    var message = document.getElementById("number-input").value;
+
+                                    document.getElementById("number-input").value = (message.replace(/[^\d]/g, ''));
+
+                                    var message1 = document.getElementById("number-input").value;
+                                    document.getElementById("number-input").value = ("(" + message1.substring(0, 2) + ") " + message1.substring(2, 7) + "-" + message1.substring(7, 11));
+                                }
+                            </script>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Idade*</label>
