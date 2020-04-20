@@ -6,13 +6,13 @@
 
 # Saude 092
 
-A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hack Saúde 2020 a partir da produção de solução para instrumentos de acesso a informação e postos de atendimento em saúde pública.
+A Plataforma Saúde 092 surgiu na competição Pandemic Amazon Hackfest Saúde 2020 a partir da produção de solução para instrumentos de acesso a informação e postos de atendimento em saúde pública.
 
 ## Funcionamento da Plataforma
 
 ### Cliente (front-end)
 
-A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo hospedada na plataforma Github Pages. A parte de [atendimento](#Atendimento) é um formulário onde um paciente com suspeita de Covid-19 responde perguntas do tipo "Você está com falta de ar?" e o próprio sistema passa instruções ao paciente, sendo três casos possíveis:
+A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo hospedada na plataforma Github Pages. A parte de Pré-cadastro é um formulário onde um paciente com suspeita de Covid-19 responde perguntas do tipo "Você está com falta de ar?" e o próprio sistema passa instruções ao paciente, sendo três casos possíveis:
 
 - Caso 1 (Sem COVID-19) -> O paciente recebe instruções de tomar precauções de higiene e permanecer em sua casa.
 
