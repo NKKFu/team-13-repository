@@ -1,7 +1,7 @@
-![alt-text-1](https://i.ibb.co/2YTzVrd/print1.png)
+![alt-text-1](https://i.ibb.co/FYxd0jJ/print2.png)
 > Imagem da tela inicial da plataforma Saude 092
 
-![alt-text-2](https://i.ibb.co/TRtCwjq/print2.png)
+![alt-text-2](https://i.ibb.co/ynXybYH/print1.png)
 > Imagem da tela de notícias da plataforma Saude 092
 
 # Saude 092
