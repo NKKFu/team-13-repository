@@ -422,8 +422,10 @@
                                 });
 
                                 socket.on('cancel', () => {
-                                    document.getElementById('end3').classList.add('d-none');
-                                    document.getElementById('end2').classList.remove('d-none');
+                                    console.log('CANCELAMENTO');
+                                    
+                                    document.getElementById('end3').classList.remove('d-none');
+                                    document.getElementById('end2').classList.add('d-none');
 
                                     findUBS();
                                     const id = new Date().valueOf();
