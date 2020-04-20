@@ -18,21 +18,23 @@ A parte de front-end foi desenvolvida com o framework Bootstrap 4 e está sendo 
 
 - Caso 2 (Suspeita de COVID-19) -> Uma bate-papo (chat) é aberto no próprio navegador para o paciente conversar com um atendente que passará novas instruções
 
+> Para testar este caminho é necessário que haja alguém atrás da moderação, veja mais em "Atendimento (back-end)"
+
 - Caso 3 (Sintomas graves de COVID-19) -> O sistema manda um email à central e mostra à pessoa qual é a unidade médica mais próxima dela de acordo com a resposta de seu geolocalizador (GPS) e o banco de unidades da plataforma, disponível em: https://github.com/NKKFu/team-13-repository/blob/master/back-end/ubs-list.js
 
-Preview funcional: https://nkkfu.github.io/team-13-repository/front-end/
+[Preview funcional](https://nkkfu.github.io/team-13-repository/front-end/)
 
 ### Atendimento (back-end)
 
 A parte de atendimento ao cliente é um bate-papo desenvolvido com **Socket.IO** com o propósito do paciente receber instruções corretas por uma pessoa. 
 
-Preview funcional: https://nkkfu.github.io/team-13-repository/back-end/pages/admin.html
+[Preview funcional](https://nkkfu.github.io/team-13-repository/back-end/pages/admin.html)
 
-Clique em "Entrar em uma sala", após isso um número de quarto será dado à você. Depois disso, espere alguém ser direcionado à você (através da parte de atendimento do front-end), o sistema faz isso automaticamente.
+Clique em "Entrar em uma sala", após isso um número de quarto será dado à você. Depois disso, espere algum paciente ser direcionado à você (através da parte de atendimento do front-end), o sistema faz isso automaticamente.
 
 ### Cadastro (back-end)
 
-Todo paciente cadastrado pela Saude 092 será catalogado no email da unidade à ser encaminhado, porém como o projeto ainda não está em sua forma de produção a visualização de todos e-mails está disponível abertamente à qualquer um em: https://maildrop.cc/inbox/ubs-2914
+Todo paciente cadastrado pela Saude 092 será catalogado no email da unidade à ser encaminhado, porém como o projeto ainda não está em sua forma de produção portanto a visualização de todos e-mails está disponível abertamente à qualquer um em: https://maildrop.cc/inbox/ubs-2914
 As aquisições de email levam um certo tempo nesta plataforma (Mail Drop).
 
 
@@ -42,7 +44,7 @@ As aquisições de email levam um certo tempo nesta plataforma (Mail Drop).
 
 ## Executando back-end
 
-> Todo o sistema backend da plataforma está sendo executado dentro da plataforma Heroku em sua versão gratuita
+> Todo o sistema backend da plataforma está sendo executado dentro da plataforma Heroku em sua versão gratuita, por isso deve levar alguns segundos até a aplicação retornar uma resposta ao usuário.
 
 Com o NodeJS e as dependências do projeto instaladas, utilize o comando
 
@@ -50,10 +52,26 @@ Com o NodeJS e as dependências do projeto instaladas, utilize o comando
 
 na **pasta raiz** do projeto para rodar a API que criamos. Seu uso é simples:
 
+`localhost:3000` ou acesse utilizando `https://saude-092.herokuapp.com/`
+
 - Rota *GET* `/find/:lati/:long` -> Procurar uma unidade médica próxima às coordenadas enviadas.<br>
-Query params -> <br>
-:lati -> Int - Latitude<br>
-:long -> Int - Longitude
+
+|  | **Query params** |  |
+| :------------: | :------------: | :------------: |
+| Nome | Tipo | Descrição |
+| :lati | Int | Latitude do usuário |
+| :long | Int | Longitude do usuário |
+
+Exemplo: https://saude-092.herokuapp.com/find/-3.046678/-59.965992
+
+- Rota *GET* `/get-ubs/:id` -> Procura pela unidade médica utilizar o ID da mesma.<br>
+
+|  | **Query params** |  |
+| :------------: | :------------: | :------------: |
+| Nome | Tipo | Descrição |
+| :id | Int | ID da unidade médica |
+
+Exemplo: https://saude-092.herokuapp.com/get-ubs/2
 
 - Rota *POST* `/patient/new` -> Enviar um email à central com dados de um paciente.<br>
 Corpo da mensagem (body) ->
@@ -68,6 +86,8 @@ Corpo da mensagem (body) ->
     	contact: String,
     }
 ```
+
+> Não é possível utilizar uma URL limpa para requisições com um body, será necessário utilizar um programa de rotas, similar ao Insomnia.
 
 ## Criadores
 
